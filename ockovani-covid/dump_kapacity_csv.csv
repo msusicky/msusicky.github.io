@@ -1,133 +1,138 @@
 misto_id,datum,pocet_mist,nazev,place_id,mesto,kraj,service_id,operation_id,covtest_id
-9,2021-02-26,4,VITA s.r.o,3259,Duchcov,Ústecký,411802,6010,
-51,2021-02-23,2,Moje Ambulance a.s. Frýdek - Místek,3440,Frýdek-Místek,Moravskoslezský,411884,6104,
-51,2021-02-24,12,Moje Ambulance a.s. Frýdek - Místek,3440,Frýdek-Místek,Moravskoslezský,411884,6104,
-51,2021-02-25,9,Moje Ambulance a.s. Frýdek - Místek,3440,Frýdek-Místek,Moravskoslezský,411884,6104,
+7,2021-02-25,111,"Očkovací centrum Výstaviště České Budějovice (pavilon T1, vstup od Tesca)",2996,České Budějovice,Jihočeský,411685,5910,
+7,2021-02-26,185,"Očkovací centrum Výstaviště České Budějovice (pavilon T1, vstup od Tesca)",2996,České Budějovice,Jihočeský,411685,5910,
+9,2021-02-26,1,VITA s.r.o,3259,Duchcov,Ústecký,411802,6010,
+51,2021-02-24,6,Moje Ambulance a.s. Frýdek - Místek,3440,Frýdek-Místek,Moravskoslezský,411884,6104,
 11,2021-03-01,20,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
-11,2021-03-02,39,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
+11,2021-03-02,37,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
 11,2021-03-03,69,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
-11,2021-03-04,67,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
-52,2021-02-28,7,Nemocnice Havlíčkův Brod,3262,Havlíčkův Brod,Vysočina,411803,6012,
-12,2021-02-27,34,Fakultní nemocnice Hradec Králové,2976,Hradec Králové,Královéhradecký,411675,5898,5d50ba3d-a28f-40a0-ac3d-bacef5a3d3f5
-12,2021-02-28,203,Fakultní nemocnice Hradec Králové,2976,Hradec Králové,Královéhradecký,411675,5898,5d50ba3d-a28f-40a0-ac3d-bacef5a3d3f5
-13,2021-03-04,10,Nemocnice Hranice a.s.,3073,Hranice,Olomoucký,411721,5949,
-14,2021-02-25,3,"Nemocnice Hustopeče, p.o.",3268,Hustopeče,Jihomoravský,411804,6013,
-14,2021-02-26,12,"Nemocnice Hustopeče, p.o.",3268,Hustopeče,Jihomoravský,411804,6013,
-54,2021-02-25,29,Nemocnice Jihlava,2929,Jihlava,Vysočina,411659,5875,afbdd5b8-b6fa-4ab7-a3ee-bb6433fb1e5c
-54,2021-02-26,121,Nemocnice Jihlava,2929,Jihlava,Vysočina,411659,5875,afbdd5b8-b6fa-4ab7-a3ee-bb6433fb1e5c
-2,2021-03-04,28,"Nemocnice Rudolfa a Stefanie Benešov, a.s.",2981,Benešov,Středočeský,411677,5899,
-48,2021-02-23,8,Hornická nemocnice s poliklinikou spol. s.r.o.,3287,Bílina,Ústecký,411812,6020,
-48,2021-02-24,61,Hornická nemocnice s poliklinikou spol. s.r.o.,3287,Bílina,Ústecký,411812,6020,
-3,2021-03-02,2,"Bílovecká nemocnice, a.s.",3186,Bílovec,Moravskoslezský,411766,5988,
-5,2021-03-03,95,Fakultní nemocnice u sv. Anny v Brně,2911,Brno,Jihomoravský,411653,5869,
-5,2021-03-04,268,Fakultní nemocnice u sv. Anny v Brně,2911,Brno,Jihomoravský,411653,5869,
-21,2021-02-25,1,Oblastní nemocnice Kolín,2932,Kolín,Středočeský,411660,5876,
-21,2021-02-27,137,Oblastní nemocnice Kolín,2932,Kolín,Středočeský,411660,5876,
-55,2021-02-23,33,SZZ Krnov,3432,Krnov,Moravskoslezský,411878,6093,
-55,2021-02-24,34,SZZ Krnov,3432,Krnov,Moravskoslezský,411878,6093,
-22,2021-02-24,2,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
-22,2021-03-02,2,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
-22,2021-03-04,2,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
-23,2021-02-25,10,Nemocnice Kutná Hora,3067,Kutná Hora,Středočeský,411720,5947,
-23,2021-02-26,17,Nemocnice Kutná Hora,3067,Kutná Hora,Středočeský,411720,5947,
-1,2021-03-01,43,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
-1,2021-03-02,60,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
-1,2021-03-03,63,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
-1,2021-03-04,75,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
-56,2021-02-26,17,Nemocnice Litoměřice a.s.,3070,Litoměřice,Ústecký,411722,5948,
-58,2021-02-26,16,Nemocnice Nové Město na Moravě,3080,Nové Město na Moravě,Vysočina,411728,5953,
-59,2021-02-23,2,Nemocnice AGEL Nový Jičín a.s.,3199,Nový Jičín,Moravskoslezský,411774,5993,
-59,2021-02-24,9,Nemocnice AGEL Nový Jičín a.s.,3199,Nový Jičín,Moravskoslezský,411774,5993,
-25,2021-02-24,69,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
+11,2021-03-04,66,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
+11,2021-03-05,77,"Nemocnice s poliklinikou Havířov, p.o.",3301,Havířov,Moravskoslezský,411820,6026,
+12,2021-02-27,12,Fakultní nemocnice Hradec Králové,2976,Hradec Králové,Královéhradecký,411675,5898,5d50ba3d-a28f-40a0-ac3d-bacef5a3d3f5
+12,2021-02-28,195,Fakultní nemocnice Hradec Králové,2976,Hradec Králové,Královéhradecký,411675,5898,5d50ba3d-a28f-40a0-ac3d-bacef5a3d3f5
+12,2021-03-03,1,Fakultní nemocnice Hradec Králové,2976,Hradec Králové,Královéhradecký,411675,5898,5d50ba3d-a28f-40a0-ac3d-bacef5a3d3f5
+12,2021-03-05,1,Fakultní nemocnice Hradec Králové,2976,Hradec Králové,Královéhradecký,411675,5898,5d50ba3d-a28f-40a0-ac3d-bacef5a3d3f5
+14,2021-02-26,9,"Nemocnice Hustopeče, p.o.",3268,Hustopeče,Jihomoravský,411804,6013,
+54,2021-02-26,2,Nemocnice Jihlava,2929,Jihlava,Vysočina,411659,5875,afbdd5b8-b6fa-4ab7-a3ee-bb6433fb1e5c
+48,2021-02-24,54,Hornická nemocnice s poliklinikou spol. s.r.o.,3287,Bílina,Ústecký,411812,6020,
+5,2021-03-04,27,Fakultní nemocnice u sv. Anny v Brně,2911,Brno,Jihomoravský,411653,5869,
+5,2021-03-05,182,Fakultní nemocnice u sv. Anny v Brně,2911,Brno,Jihomoravský,411653,5869,
+21,2021-02-27,96,Oblastní nemocnice Kolín,2932,Kolín,Středočeský,411660,5876,
+55,2021-02-24,13,SZZ Krnov,3432,Krnov,Moravskoslezský,411878,6093,
+22,2021-03-02,6,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
+22,2021-03-03,15,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
+22,2021-03-04,28,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
+22,2021-03-05,19,Kroměřížská nemocnice a.s.,3296,Kroměříž,Zlínský,411816,6023,
+1,2021-03-01,7,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
+1,2021-03-02,37,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
+1,2021-03-03,58,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
+1,2021-03-04,68,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
+1,2021-03-05,89,Krajská nemocnice Liberec a.s.,2905,Liberec,Liberecký,411651,5867,
+56,2021-02-26,16,Nemocnice Litoměřice a.s.,3070,Litoměřice,Ústecký,411722,5948,
+24,2021-02-25,57,Nemocnice Neratovice,3095,Neratovice,Středočeský,411734,5958,
+59,2021-02-25,20,Nemocnice AGEL Nový Jičín a.s.,3199,Nový Jičín,Moravskoslezský,411774,5993,
+59,2021-02-26,17,Nemocnice AGEL Nový Jičín a.s.,3199,Nový Jičín,Moravskoslezský,411774,5993,
 25,2021-02-25,76,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
-25,2021-02-26,81,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
-25,2021-02-27,93,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
-25,2021-02-28,92,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
-25,2021-03-01,86,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
-26,2021-02-24,134,Vojenská nemocnice Olomouc,2944,Olomouc,Olomoucký,411664,5880,9c9ad9b2-bf71-4499-a4df-dbe2d1bfb908
-26,2021-02-25,124,Vojenská nemocnice Olomouc,2944,Olomouc,Olomoucký,411664,5880,9c9ad9b2-bf71-4499-a4df-dbe2d1bfb908
-27,2021-03-01,73,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
-27,2021-03-02,148,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
-27,2021-03-03,171,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
+25,2021-02-26,77,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
+25,2021-02-27,90,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
+25,2021-02-28,90,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
+25,2021-03-01,80,Fakultní nemocnice Olomouc,2908,Olomouc,Olomoucký,411652,5868,
+26,2021-02-25,98,Vojenská nemocnice Olomouc,2944,Olomouc,Olomoucký,411664,5880,9c9ad9b2-bf71-4499-a4df-dbe2d1bfb908
+27,2021-03-01,54,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
+27,2021-03-02,136,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
+27,2021-03-03,166,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
 27,2021-03-04,174,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
-28,2021-02-23,16,EUC Klinika Ostrava,3021,Ostrava,Moravskoslezský,411697,5925,
-28,2021-02-26,4,EUC Klinika Ostrava,3021,Ostrava,Moravskoslezský,411697,5925,
-8,2021-02-24,36,Karlovarská krajská nemocnice a.s. - Cheb,3312,Cheb,Karlovarský,411828,5866,
-8,2021-02-25,44,Karlovarská krajská nemocnice a.s. - Cheb,3312,Cheb,Karlovarský,411828,5866,
-8,2021-02-26,45,Karlovarská krajská nemocnice a.s. - Cheb,3312,Cheb,Karlovarský,411828,5866,
-15,2021-02-26,20,"Nemocnice Jablonec nad Nisou, p. o.",3036,Jablonec nad Nisou,Liberecký,411708,5936,
-17,2021-02-24,6,Karlovarská krajská nemocnice a.s.,2902,Karlovy Vary,Karlovarský,411650,5866,
-17,2021-02-25,26,Karlovarská krajská nemocnice a.s.,2902,Karlovy Vary,Karlovarský,411650,5866,
-17,2021-02-26,18,Karlovarská krajská nemocnice a.s.,2902,Karlovy Vary,Karlovarský,411650,5866,
-18,2021-02-23,27,Nemocnice s poliklinikou Karviná-Ráj,3310,Karviná,Moravskoslezský,411827,6030,1668a0ae-d1db-4811-aa21-d961e3ffb6ee
-18,2021-02-25,11,Nemocnice s poliklinikou Karviná-Ráj,3310,Karviná,Moravskoslezský,411827,6030,1668a0ae-d1db-4811-aa21-d961e3ffb6ee
-18,2021-02-26,26,Nemocnice s poliklinikou Karviná-Ráj,3310,Karviná,Moravskoslezský,411827,6030,1668a0ae-d1db-4811-aa21-d961e3ffb6ee
-148,2021-02-25,7,Nemocnice AGEL Bruntál,3320,Bruntál,Moravskoslezský,411830,6032,
-148,2021-02-26,13,Nemocnice AGEL Bruntál,3320,Bruntál,Moravskoslezský,411830,6032,
-149,2021-02-24,1,Oblastní nemocnice Jičín a.s.,3154,Jičín,Královéhradecký,411752,5976,
-149,2021-02-25,2,Oblastní nemocnice Jičín a.s.,3154,Jičín,Královéhradecký,411752,5976,
-149,2021-02-26,3,Oblastní nemocnice Jičín a.s.,3154,Jičín,Královéhradecký,411752,5976,
-31,2021-02-24,264,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-02-25,269,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-02-26,278,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-02-27,284,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-02-28,295,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-03-01,282,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-03-02,295,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-03-03,299,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-31,2021-03-04,300,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
-60,2021-02-24,5,Moje Ambulance a.s. Ostrava - Poruba,3441,Ostrava,Moravskoslezský,411885,6103,f53c2d14-2570-49cd-a03f-5595e647a4d9
-60,2021-02-25,9,Moje Ambulance a.s. Ostrava - Poruba,3441,Ostrava,Moravskoslezský,411885,6103,f53c2d14-2570-49cd-a03f-5595e647a4d9
-32,2021-02-24,1,Fakultní Nemocnice Plzeň,2899,Plzeň,Plzeňský,411649,5865,6c7d0c21-345e-4018-a310-7dc433bb41e0
-32,2021-02-25,53,Fakultní Nemocnice Plzeň,2899,Plzeň,Plzeňský,411649,5865,6c7d0c21-345e-4018-a310-7dc433bb41e0
-32,2021-02-26,100,Fakultní Nemocnice Plzeň,2899,Plzeň,Plzeňský,411649,5865,6c7d0c21-345e-4018-a310-7dc433bb41e0
-152,2021-03-01,17,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova,3381,Praha,Praha,411853,5987,
-152,2021-03-02,40,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova,3381,Praha,Praha,411853,5987,
-152,2021-03-03,27,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova,3381,Praha,Praha,411853,5987,
-33,2021-02-24,249,Fakultní nemocnice Královské Vinohrady,2969,Praha,Praha,411674,5894,
-33,2021-02-25,261,Fakultní nemocnice Královské Vinohrady,2969,Praha,Praha,411674,5894,
-33,2021-02-26,245,Fakultní nemocnice Královské Vinohrady,2969,Praha,Praha,411674,5894,
-35,2021-02-27,118,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
-35,2021-02-28,120,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
-35,2021-03-01,179,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
-35,2021-03-02,180,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
-35,2021-03-03,180,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
-35,2021-03-04,180,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
-36,2021-02-24,182,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
-36,2021-02-25,181,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
-36,2021-02-26,172,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
+27,2021-03-05,171,Slezská nemocnice v Opavě,3243,Opava,Moravskoslezský,411795,6003,
+28,2021-02-24,1,EUC Klinika Ostrava,3021,Ostrava,Moravskoslezský,411697,5925,
+28,2021-02-25,4,EUC Klinika Ostrava,3021,Ostrava,Moravskoslezský,411697,5925,
+29,2021-03-04,5,Zdravotní ústav se sídlem v Ostravě - Ostrava,3230,Ostrava,Moravskoslezský,411788,5889,
+29,2021-03-05,22,Zdravotní ústav se sídlem v Ostravě - Ostrava,3230,Ostrava,Moravskoslezský,411788,5889,
+8,2021-02-25,38,Karlovarská krajská nemocnice a.s. - Cheb,3312,Cheb,Karlovarský,411828,5866,
+8,2021-02-26,41,Karlovarská krajská nemocnice a.s. - Cheb,3312,Cheb,Karlovarský,411828,5866,
+15,2021-03-01,16,"Nemocnice Jablonec nad Nisou, p. o.",3036,Jablonec nad Nisou,Liberecký,411708,5936,
+15,2021-03-02,75,"Nemocnice Jablonec nad Nisou, p. o.",3036,Jablonec nad Nisou,Liberecký,411708,5936,
+15,2021-03-03,96,"Nemocnice Jablonec nad Nisou, p. o.",3036,Jablonec nad Nisou,Liberecký,411708,5936,
+15,2021-03-04,100,"Nemocnice Jablonec nad Nisou, p. o.",3036,Jablonec nad Nisou,Liberecký,411708,5936,
+15,2021-03-05,98,"Nemocnice Jablonec nad Nisou, p. o.",3036,Jablonec nad Nisou,Liberecký,411708,5936,
+17,2021-02-25,23,Karlovarská krajská nemocnice a.s.,2902,Karlovy Vary,Karlovarský,411650,5866,
+17,2021-02-26,14,Karlovarská krajská nemocnice a.s.,2902,Karlovy Vary,Karlovarský,411650,5866,
+17,2021-02-27,72,Karlovarská krajská nemocnice a.s.,2902,Karlovy Vary,Karlovarský,411650,5866,
+18,2021-02-25,9,Nemocnice s poliklinikou Karviná-Ráj,3310,Karviná,Moravskoslezský,411827,6030,1668a0ae-d1db-4811-aa21-d961e3ffb6ee
+18,2021-02-26,23,Nemocnice s poliklinikou Karviná-Ráj,3310,Karviná,Moravskoslezský,411827,6030,1668a0ae-d1db-4811-aa21-d961e3ffb6ee
+148,2021-02-25,4,Nemocnice AGEL Bruntál,3320,Bruntál,Moravskoslezský,411830,6032,
+148,2021-02-26,8,Nemocnice AGEL Bruntál,3320,Bruntál,Moravskoslezský,411830,6032,
+148,2021-03-01,10,Nemocnice AGEL Bruntál,3320,Bruntál,Moravskoslezský,411830,6032,
+149,2021-02-25,1,Oblastní nemocnice Jičín a.s.,3154,Jičín,Královéhradecký,411752,5976,
+149,2021-03-02,76,Oblastní nemocnice Jičín a.s.,3154,Jičín,Královéhradecký,411752,5976,
+30,2021-03-05,5,"Městská nemocnice Ostrava, p.o.",3256,Ostrava,Moravskoslezský,411801,6009,
+31,2021-02-25,226,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-02-26,219,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-02-27,258,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-02-28,289,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-03-01,270,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-03-02,289,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-03-03,295,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-03-04,292,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+31,2021-03-05,308,Fakultní nemocnice Ostrava,2951,Ostrava,Moravskoslezský,411670,5893,52fb0fed-283c-4e83-93d0-4bffa2d8c38f
+60,2021-02-25,4,Moje Ambulance a.s. Ostrava - Poruba,3441,Ostrava,Moravskoslezský,411885,6103,f53c2d14-2570-49cd-a03f-5595e647a4d9
+32,2021-02-24,4,Fakultní Nemocnice Plzeň,2899,Plzeň,Plzeňský,411649,5865,6c7d0c21-345e-4018-a310-7dc433bb41e0
+32,2021-02-26,24,Fakultní Nemocnice Plzeň,2899,Plzeň,Plzeňský,411649,5865,6c7d0c21-345e-4018-a310-7dc433bb41e0
+152,2021-03-01,3,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova,3381,Praha,Praha,411853,5987,
+152,2021-03-02,37,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova,3381,Praha,Praha,411853,5987,
+152,2021-03-03,22,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova,3381,Praha,Praha,411853,5987,
+33,2021-02-25,173,Fakultní nemocnice Královské Vinohrady,2969,Praha,Praha,411674,5894,
+33,2021-02-26,112,Fakultní nemocnice Královské Vinohrady,2969,Praha,Praha,411674,5894,
+35,2021-03-01,88,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
+35,2021-03-02,144,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
+35,2021-03-03,135,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
+35,2021-03-04,165,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
+35,2021-03-05,151,Fakultní nemocnice v Motole,2917,Praha,Praha,411655,5871,323bc37e-e55b-4bff-84ff-354f47cf34db
+36,2021-02-25,179,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
+36,2021-02-26,173,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
 36,2021-03-01,186,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
 36,2021-03-02,190,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
 36,2021-03-03,188,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
 36,2021-03-04,190,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
-37,2021-02-24,110,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
-37,2021-02-25,182,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
-37,2021-02-26,74,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
-37,2021-02-27,87,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
-37,2021-02-28,79,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
-66,2021-02-25,114,"Nemocnice Prachatice, a.s.",3089,Prachatice,Jihočeský,411731,5956,
-50,2021-02-25,4,BVV velkokapacitní očkovací centrum,2948,Brno,Jihomoravský,411667,5885,
-50,2021-02-26,67,BVV velkokapacitní očkovací centrum,2948,Brno,Jihomoravský,411667,5885,
-20,2021-02-24,62,Oblastní nemocnice Kladno,2935,Kladno,Středočeský,411661,5877,
-62,2021-02-24,111,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
-62,2021-02-25,131,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
-62,2021-02-26,129,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
-62,2021-03-01,72,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
-62,2021-03-02,147,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
+36,2021-03-05,188,Nemocnice na Homolce,2923,Praha,Praha,411657,5873,
+37,2021-02-24,44,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
+37,2021-02-25,115,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
+37,2021-02-26,1,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
+37,2021-02-27,58,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
+37,2021-02-28,56,"Ústřední vojenská nemocnice - Očkovací centrum, pavilon L",3341,Praha,Praha,411839,5892,6011957b-dfcb-4513-ac51-77f08abf59ae
+66,2021-02-25,60,"Nemocnice Prachatice, a.s.",3089,Prachatice,Jihočeský,411731,5956,
+20,2021-02-25,282,Oblastní nemocnice Kladno,2935,Kladno,Středočeský,411661,5877,
+62,2021-02-25,124,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
+62,2021-02-26,125,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
+62,2021-03-01,54,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
+62,2021-03-02,139,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
 62,2021-03-03,148,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
-62,2021-03-04,64,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
-40,2021-02-25,54,Rokycanská nemocnice,3165,Rokycany,Plzeňský,411758,5981,
-40,2021-02-26,47,Rokycanská nemocnice,3165,Rokycany,Plzeňský,411758,5981,
-68,2021-02-24,63,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
-68,2021-02-25,87,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
-68,2021-02-26,95,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
-42,2021-03-03,17,Nemocnice Sokolov,3250,Sokolov,Karlovarský,411798,6007,
-42,2021-03-04,37,Nemocnice Sokolov,3250,Sokolov,Karlovarský,411798,6007,
-43,2021-02-24,67,Stodská nemocnice,3180,Stod,Plzeňský,411763,5986,
-43,2021-02-25,84,Stodská nemocnice,3180,Stod,Plzeňský,411763,5986,
-69,2021-02-25,276,"Nemocnice Strakonice, a.s. - infekční ambulance",3104,Strakonice,Jihočeský,411737,5961,
-155,2021-03-03,30,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Ústí,3378,Ústí nad Labem,Ústecký,411852,5987,
-155,2021-03-04,32,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Ústí,3378,Ústí nad Labem,Ústecký,411852,5987,
-47,2021-02-24,9,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
-47,2021-02-25,4,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
-47,2021-02-26,13,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
+62,2021-03-04,63,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
+62,2021-03-05,114,Státní zdravotní ústav,3171,Praha,Praha,411760,5983,
+67,2021-02-25,198,AGEL Středomoravská nemocniční a.s. - Přerov,3202,Přerov,Olomoucký,411776,5995,60c02833-61a2-438b-acac-19d6c91fa5a3
+67,2021-02-26,218,AGEL Středomoravská nemocniční a.s. - Přerov,3202,Přerov,Olomoucký,411776,5995,60c02833-61a2-438b-acac-19d6c91fa5a3
+40,2021-02-25,25,Rokycanská nemocnice,3165,Rokycany,Plzeňský,411758,5981,
+40,2021-02-26,21,Rokycanská nemocnice,3165,Rokycany,Plzeňský,411758,5981,
+68,2021-02-25,71,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
+68,2021-02-26,84,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
+68,2021-03-02,300,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
+68,2021-03-03,300,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
+68,2021-03-04,300,Nemocnice Slaný,3122,Slaný,Středočeský,411743,5967,
+42,2021-03-04,1,Nemocnice Sokolov,3250,Sokolov,Karlovarský,411798,6007,
+42,2021-03-05,20,Nemocnice Sokolov,3250,Sokolov,Karlovarský,411798,6007,
+43,2021-02-25,36,Stodská nemocnice,3180,Stod,Plzeňský,411763,5986,
+69,2021-02-25,193,"Nemocnice Strakonice, a.s. - infekční ambulance",3104,Strakonice,Jihočeský,411737,5961,
+63,2021-02-24,22,Sušická nemocnice,3174,Sušice,Plzeňský,411761,5984,94812db9-c7ef-4daa-a9eb-571859740990
+63,2021-02-25,24,Sušická nemocnice,3174,Sušice,Plzeňský,411761,5984,94812db9-c7ef-4daa-a9eb-571859740990
+154,2021-02-25,1,Nemocnice Třebíč,3044,Třebíč,Vysočina,411712,5938,
+155,2021-03-04,17,Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Ústí,3378,Ústí nad Labem,Ústecký,411852,5987,
+64,2021-02-25,57,Masarykova nemocnice Ústí nad Labem,2920,Ústí nad Labem,Ústecký,411656,5872,
+64,2021-02-26,52,Masarykova nemocnice Ústí nad Labem,2920,Ústí nad Labem,Ústecký,411656,5872,
+64,2021-02-27,68,Masarykova nemocnice Ústí nad Labem,2920,Ústí nad Labem,Ústecký,411656,5872,
+64,2021-02-28,87,Masarykova nemocnice Ústí nad Labem,2920,Ústí nad Labem,Ústecký,411656,5872,
+47,2021-03-01,4,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
+47,2021-03-02,27,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
+47,2021-03-03,29,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
+47,2021-03-04,30,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
+47,2021-03-05,30,Vsetínská nemocnice,3191,Vsetín,Zlínský,411768,5991,
+156,2021-02-25,95,"Krajská nemocnice T. Bati, a. s.",2926,Zlín,Zlínský,411658,5874,
+156,2021-02-26,100,"Krajská nemocnice T. Bati, a. s.",2926,Zlín,Zlínský,411658,5874,
