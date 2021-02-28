@@ -43,7 +43,6 @@ COVID očkování</title>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-TXSRVP25Y2');
     </script>
 
@@ -68,14 +67,12 @@ COVID očkování</title>
             </li>
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity.csv"
-                   target="_blank">RAW data
+                   href="/ockovani-covid/mapa">Mapa
                 </a>
             </li>
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity_csv.csv"
-                   target="_blank">CSV data
+                   href="/ockovani-covid/opendata">Otevřená data
                 </a>
             </li>
         </ul>
@@ -402,6 +399,7 @@ COVID očkování</title>
 <script>
     var center = SMap.Coords.fromWGS84(14.0954883, 49.9648486);
     var m = new SMap(JAK.gel("center-map"), center, 14);
+    m.addControl(new SMap.Control.Sync());
     m.addDefaultLayer(SMap.DEF_BASE).enable();
     m.addDefaultControls();
 
