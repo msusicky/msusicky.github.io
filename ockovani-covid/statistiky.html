@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!--[if IE]>
+    <div style='clear: both; height: 112px; padding:0; position: relative;'>
+        <a href="http://www.theie8countdown.com/ie-users-info">
+            <img src="http://www.theie8countdown.com/assets/badge_iecountdown.png"
+                 border="0" height="112" width="348" alt=""/>
+        </a>
+    </div>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+Statistiky |
+COVID očkování</title>
+
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <style>.cip-genpw-icon.cip-icon-key-small {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_16x16.png); }
+        .cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
+    </style>
+    <script src="https://api.mapy.cz/loader.js"></script>
+	<script>Loader.load()</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXSRVP25Y2"></script>
+    <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-TXSRVP25Y2');
+    </script>
+
+    
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/ockovani-covid/">COVID očkování</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item col-lg-auto ml-auto">
+                <a class="nav-link "
+                   href="/ockovani-covid/mista">Přehled očkovacích míst
+                </a>
+            </li>
+            <li class="nav-item col-lg-auto ml-auto">
+                <a class="nav-link "
+                   href="/ockovani-covid/mapa">Mapa
+                </a>
+            </li>
+            <li class="nav-item col-lg-auto ml-auto">
+                <a class="nav-link "
+                   href="/ockovani-covid/opendata">Otevřená data
+                </a>
+            </li>
+            <li class="nav-item col-lg-auto ml-auto">
+                <a class="nav-link active"
+                   href="/ockovani-covid/statistiky">Statistiky
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container mt-4">
+    <div class="alert alert-warning alert-dismissible fade show row" role="alert">
+        Poslední aktualizace:&nbsp;<strong>Út 02. 03. 2021 06:36</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    
+<div class="row">
+    <h3>Souhrnné statistiky očkování</h3>
+</div>
+
+<div class="row">
+    
+    K datu poslední aktualizace, tj. Út 02. 03. 2021 06:36, bylo celkem naočkováno 243316 lidí a bylo
+    podáno 674040 dávek. Pokud bychom očkovali rychlostí nejrychlejšího dne a očkovali nepřetržitě,
+    pak skončíme (60% dospělé populace, 2 dávky): <strong>07. 04. 2022</strong>.
+    Nicméně mnoho očkovacích center bude ještě
+    vybudováno.
+    
+    <br/>
+    <br/>
+</div>
+
+<div class="row">
+    
+    <table class="table table-bordered table-striped table-sm">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="text-center">Vakcína</th>
+            <th scope="col" class="text-center">Přišlo</th>
+            <th scope="col" class="text-center">Vyočkováno</th>
+            <th scope="col" class="text-center">Rozdíl - k dispozici</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tr>
+            <td>Moderna</td>
+            <td>87540</td>
+            <td>20260</td>
+            <td>67280</td>
+        </tr>
+        
+        <tr>
+            <td>Pfizer</td>
+            <td>712944</td>
+            <td>564858</td>
+            <td>148086</td>
+        </tr>
+        
+        <tr>
+            <td>AstraZeneca</td>
+            <td>110920</td>
+            <td>22040</td>
+            <td>88880</td>
+        </tr>
+        
+        </tbody>
+    </table>
+    
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Nejvíce naočkovaných za den</h5>
+                
+                <table class="table table-bordered table-striped table-sm">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="text-center">Datum</th>
+                        <th scope="col" class="text-center">Celkem</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    <tr>
+                        <td>2021-02-25</td>
+                        <td>22536</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-02-11</td>
+                        <td>21978</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-02-12</td>
+                        <td>20860</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-02-26</td>
+                        <td>19915</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-02-18</td>
+                        <td>19747</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                
+                <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Nejvýkonnější místo</h5>
+                
+                <table class="table table-bordered table-striped table-sm">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="text-center">Datum</th>
+                        <th scope="col" class="text-center">Místo</th>
+                        <th scope="col" class="text-center">Celkem</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    <tr>
+                        <td>2021-02-04</td>
+                        <td>Fakultní nemocnice Brno</td>
+                        <td>1169</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2020-12-29</td>
+                        <td>Fakultní nemocnice Brno</td>
+                        <td>1128</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-01-14</td>
+                        <td>Fakultní nemocnice Brno</td>
+                        <td>1104</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-02-05</td>
+                        <td>Fakultní nemocnice Brno</td>
+                        <td>1095</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2021-01-13</td>
+                        <td>Fakultní nemocnice Brno</td>
+                        <td>1074</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                
+                <p class="card-text">5 míst s největším počtem očkovaných za den.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Obdržených dávek</h5>
+                
+                <table class="table table-bordered table-striped table-sm">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="text-center">Věková skupina</th>
+                        <th scope="col" class="text-center">Dávek</th>
+                        <th scope="col" class="text-center">Očkovaných</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    <tr>
+                        <td>0-17</td>
+                        <td>291</td>
+                        <td>90</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>18-24</td>
+                        <td>13236</td>
+                        <td>5188</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>25-29</td>
+                        <td>22865</td>
+                        <td>9283</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>30-34</td>
+                        <td>25095</td>
+                        <td>10118</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>35-39</td>
+                        <td>33686</td>
+                        <td>13743</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>40-44</td>
+                        <td>48747</td>
+                        <td>19912</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>45-49</td>
+                        <td>55814</td>
+                        <td>23052</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>50-54</td>
+                        <td>46137</td>
+                        <td>18791</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>55-59</td>
+                        <td>45373</td>
+                        <td>18160</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>60-64</td>
+                        <td>35543</td>
+                        <td>14150</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>65-69</td>
+                        <td>27469</td>
+                        <td>10523</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>70-74</td>
+                        <td>22618</td>
+                        <td>7896</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>75-79</td>
+                        <td>21446</td>
+                        <td>7038</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>80+</td>
+                        <td>275660</td>
+                        <td>85352</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>nezařazeno</td>
+                        <td>60</td>
+                        <td>20</td>
+                    </tr>
+                    
+                    </tbody>
+                </table>
+                
+                <p class="card-text"><i>Očkovaní dostali obě dávky.</i></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="footer text-center p-3 bg-light mt-4">
+    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;Út 02. 03. 2021 06:36. Zdroj mapy: <a href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
+    <br/>
+    <i>
+        Data na tomto webu jsou pouze orientační, bez jakékoliv záruky a nelze je považovat za spolehlivé.
+        Provozovatel se zříká zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
+        Pro informace o očkování COVID-19 navštivte web <a href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a>.
+    </i>
+</div>
+</body>
+</html>

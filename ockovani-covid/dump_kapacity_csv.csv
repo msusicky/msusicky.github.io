@@ -3,25 +3,6 @@ misto_id,datum,volna_mista,nazev,okres,kraj,service_id,operation_id
 df47a465-f872-4968-a8e9-057059b8e900,2021-03-02,36,Comfort Care a.s.,Hlavní město Praha,Praha,411994,6272
 df47a465-f872-4968-a8e9-057059b8e900,2021-03-03,72,Comfort Care a.s.,Hlavní město Praha,Praha,411994,6272
 df47a465-f872-4968-a8e9-057059b8e900,2021-03-10,72,Comfort Care a.s.,Hlavní město Praha,Praha,411994,6272
-51f67019-bb4e-41e0-a38b-91c9480596fd,2021-03-05,3,L Dermamedest s.r.o.,Hlavní město Praha,Praha,412064,6382
-dd1190e0-c2e5-4e90-baaf-1eefa55c4e46,2021-03-03,43,Městská nemocnice následné péče,Hlavní město Praha,Praha,411999,6278
-dd1190e0-c2e5-4e90-baaf-1eefa55c4e46,2021-03-04,49,Městská nemocnice následné péče,Hlavní město Praha,Praha,411999,6278
-dd1190e0-c2e5-4e90-baaf-1eefa55c4e46,2021-03-05,58,Městská nemocnice následné péče,Hlavní město Praha,Praha,411999,6278
-12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-03,1,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
-12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-04,10,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
-12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-09,42,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
-12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-10,69,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
-12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-11,63,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
-02614fc8-a7d0-439d-8589-57c599cb495d,2021-03-05,31,Nemocnice Na Františku,Hlavní město Praha,Praha,412053,6360
-02614fc8-a7d0-439d-8589-57c599cb495d,2021-03-08,32,Nemocnice Na Františku,Hlavní město Praha,Praha,412053,6360
-02614fc8-a7d0-439d-8589-57c599cb495d,2021-03-11,23,Nemocnice Na Františku,Hlavní město Praha,Praha,412053,6360
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-03,148,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-04,189,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-05,187,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-08,184,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-09,186,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-10,189,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
-b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-11,192,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
 648f87b6-06e7-49d5-b2a7-2dc31c867ff7,2021-03-02,121,Fakultní Thomayerova nemocnice,Hlavní město Praha,Praha,411518,5895
 648f87b6-06e7-49d5-b2a7-2dc31c867ff7,2021-03-03,127,Fakultní Thomayerova nemocnice,Hlavní město Praha,Praha,411518,5895
 648f87b6-06e7-49d5-b2a7-2dc31c867ff7,2021-03-05,2,Fakultní Thomayerova nemocnice,Hlavní město Praha,Praha,411518,5895
@@ -43,6 +24,25 @@ c2ca4cb4-2c8d-4463-9b85-88dff5eb4ba5,2021-03-06,311,Fakultní nemocnice Královs
 77079458-38f2-4bff-b983-7f99a07afdc3,2021-03-10,173,Fakultní nemocnice v Motole,Hlavní město Praha,Praha,411655,5871
 77079458-38f2-4bff-b983-7f99a07afdc3,2021-03-11,164,Fakultní nemocnice v Motole,Hlavní město Praha,Praha,411655,5871
 461c2eda-5db7-4b18-bdbc-3a3111dac0e8,2021-03-04,11,Gerontologické centrum,Hlavní město Praha,Praha,412091,6436
+51f67019-bb4e-41e0-a38b-91c9480596fd,2021-03-05,3,L Dermamedest s.r.o.,Hlavní město Praha,Praha,412064,6382
+dd1190e0-c2e5-4e90-baaf-1eefa55c4e46,2021-03-03,43,Městská nemocnice následné péče,Hlavní město Praha,Praha,411999,6278
+dd1190e0-c2e5-4e90-baaf-1eefa55c4e46,2021-03-04,49,Městská nemocnice následné péče,Hlavní město Praha,Praha,411999,6278
+dd1190e0-c2e5-4e90-baaf-1eefa55c4e46,2021-03-05,58,Městská nemocnice následné péče,Hlavní město Praha,Praha,411999,6278
+12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-03,1,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
+12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-04,10,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
+12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-09,42,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
+12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-10,69,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
+12d05c60-f168-462a-a4e1-ac5ad8e42722,2021-03-11,63,Městská poliklinika Praha - Spálená,Hlavní město Praha,Praha,411704,5931
+02614fc8-a7d0-439d-8589-57c599cb495d,2021-03-05,31,Nemocnice Na Františku,Hlavní město Praha,Praha,412053,6360
+02614fc8-a7d0-439d-8589-57c599cb495d,2021-03-08,32,Nemocnice Na Františku,Hlavní město Praha,Praha,412053,6360
+02614fc8-a7d0-439d-8589-57c599cb495d,2021-03-11,23,Nemocnice Na Františku,Hlavní město Praha,Praha,412053,6360
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-03,148,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-04,189,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-05,187,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-08,184,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-09,186,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-10,189,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
+b62c5314-15f8-4da2-95f0-0aedd6d11ac2,2021-03-11,192,Nemocnice Na Homolce,Hlavní město Praha,Praha,411657,5873
 e1aecc42-6aa6-46cc-9dde-9761fd6fa830,2021-03-04,12,Poliklinika Prosek a.s.,Hlavní město Praha,Praha,412003,6281
 e1aecc42-6aa6-46cc-9dde-9761fd6fa830,2021-03-05,16,Poliklinika Prosek a.s.,Hlavní město Praha,Praha,412003,6281
 e1aecc42-6aa6-46cc-9dde-9761fd6fa830,2021-03-08,16,Poliklinika Prosek a.s.,Hlavní město Praha,Praha,412003,6281
@@ -52,12 +52,12 @@ e1aecc42-6aa6-46cc-9dde-9761fd6fa830,2021-03-11,14,Poliklinika Prosek a.s.,Hlavn
 b8a946ef-4994-4dcd-859e-09040f43a6d0,2021-03-02,12,RESPIMED s.r.o.,Hlavní město Praha,Praha,412005,6283
 b8a946ef-4994-4dcd-859e-09040f43a6d0,2021-03-03,17,RESPIMED s.r.o.,Hlavní město Praha,Praha,412005,6283
 5fec0218-4280-40c9-8f6d-c096ea70bbaa,2021-03-04,12,ResTrial s.r.o. - ordinace PL,Hlavní město Praha,Praha,412151,6546
-ccdcc2c1-c477-4271-af37-76ff2ea3e764,2021-03-09,88,"Canadian Medical s.r.o., očkovací centrum",Hlavní město Praha,Praha,412229,6670
-ccdcc2c1-c477-4271-af37-76ff2ea3e764,2021-03-10,129,"Canadian Medical s.r.o., očkovací centrum",Hlavní město Praha,Praha,412229,6670
-ccdcc2c1-c477-4271-af37-76ff2ea3e764,2021-03-11,139,"Canadian Medical s.r.o., očkovací centrum",Hlavní město Praha,Praha,412229,6670
 4ea9c79c-ebac-4505-8176-7d22ca45c0d2,2021-03-05,3,ÚVN Praha - Vakcinační centrum COVID-19,Hlavní město Praha,Praha,411839,5892
 4ea9c79c-ebac-4505-8176-7d22ca45c0d2,2021-03-06,14,ÚVN Praha - Vakcinační centrum COVID-19,Hlavní město Praha,Praha,411839,5892
 4ea9c79c-ebac-4505-8176-7d22ca45c0d2,2021-03-07,144,ÚVN Praha - Vakcinační centrum COVID-19,Hlavní město Praha,Praha,411839,5892
+ccdcc2c1-c477-4271-af37-76ff2ea3e764,2021-03-09,88,"Canadian Medical s.r.o., očkovací centrum",Hlavní město Praha,Praha,412229,6670
+ccdcc2c1-c477-4271-af37-76ff2ea3e764,2021-03-10,129,"Canadian Medical s.r.o., očkovací centrum",Hlavní město Praha,Praha,412229,6670
+ccdcc2c1-c477-4271-af37-76ff2ea3e764,2021-03-11,139,"Canadian Medical s.r.o., očkovací centrum",Hlavní město Praha,Praha,412229,6670
 7bdb206f-d1a2-4afb-9770-863958ae98f7,2021-03-03,13,Nemocnice Boskovice s.r.o.,Blansko,Jihomoravský,411942,6178
 7bdb206f-d1a2-4afb-9770-863958ae98f7,2021-03-04,26,Nemocnice Boskovice s.r.o.,Blansko,Jihomoravský,411942,6178
 7bdb206f-d1a2-4afb-9770-863958ae98f7,2021-03-05,32,Nemocnice Boskovice s.r.o.,Blansko,Jihomoravský,411942,6178
@@ -163,10 +163,6 @@ aa0a5675-d1ba-4282-9bbf-c36053f0e7c9,2021-03-11,171,"Slezská nemocnice v Opavě
 4b39139d-22d5-40e3-b752-dfa2d6aca34e,2021-03-09,41,EUC klinika Ostrava a.s.,Ostrava-město,Moravskoslezský,411697,5925
 4b39139d-22d5-40e3-b752-dfa2d6aca34e,2021-03-10,14,EUC klinika Ostrava a.s.,Ostrava-město,Moravskoslezský,411697,5925
 4b39139d-22d5-40e3-b752-dfa2d6aca34e,2021-03-11,57,EUC klinika Ostrava a.s.,Ostrava-město,Moravskoslezský,411697,5925
-bd060d74-64dd-45dd-bd06-51f9d6147814,2021-03-03,2,Moje Ambulance a.s. Ostrava - Poruba,Ostrava-město,Moravskoslezský,411885,6103
-bd060d74-64dd-45dd-bd06-51f9d6147814,2021-03-04,1,Moje Ambulance a.s. Ostrava - Poruba,Ostrava-město,Moravskoslezský,411885,6103
-bd060d74-64dd-45dd-bd06-51f9d6147814,2021-03-05,1,Moje Ambulance a.s. Ostrava - Poruba,Ostrava-město,Moravskoslezský,411885,6103
-a74425f4-80fe-4f1f-abb9-3e8df7ca8aac,2021-03-08,48,"Městská nemocnice Ostrava, p.o., Vakcinační centrum",Ostrava-město,Moravskoslezský,411801,6009
 262721a0-5551-41d6-bc46-06d5aa9d18a8,2021-03-05,280,FN Ostrava - Poliklinika,Ostrava-město,Moravskoslezský,411670,5893
 262721a0-5551-41d6-bc46-06d5aa9d18a8,2021-03-06,148,FN Ostrava - Poliklinika,Ostrava-město,Moravskoslezský,411670,5893
 262721a0-5551-41d6-bc46-06d5aa9d18a8,2021-03-07,254,FN Ostrava - Poliklinika,Ostrava-město,Moravskoslezský,411670,5893
@@ -183,6 +179,10 @@ a74425f4-80fe-4f1f-abb9-3e8df7ca8aac,2021-03-08,48,"Městská nemocnice Ostrava,
 1295fe02-0319-40e4-a482-d4b8a0bfe138,2021-03-09,297,FN Ostrava - Černá Louka Výstaviště,Ostrava-město,Moravskoslezský,412203,5893
 1295fe02-0319-40e4-a482-d4b8a0bfe138,2021-03-10,317,FN Ostrava - Černá Louka Výstaviště,Ostrava-město,Moravskoslezský,412203,5893
 1295fe02-0319-40e4-a482-d4b8a0bfe138,2021-03-11,338,FN Ostrava - Černá Louka Výstaviště,Ostrava-město,Moravskoslezský,412203,5893
+bd060d74-64dd-45dd-bd06-51f9d6147814,2021-03-03,2,Moje Ambulance a.s. Ostrava - Poruba,Ostrava-město,Moravskoslezský,411885,6103
+bd060d74-64dd-45dd-bd06-51f9d6147814,2021-03-04,1,Moje Ambulance a.s. Ostrava - Poruba,Ostrava-město,Moravskoslezský,411885,6103
+bd060d74-64dd-45dd-bd06-51f9d6147814,2021-03-05,1,Moje Ambulance a.s. Ostrava - Poruba,Ostrava-město,Moravskoslezský,411885,6103
+a74425f4-80fe-4f1f-abb9-3e8df7ca8aac,2021-03-08,48,"Městská nemocnice Ostrava, p.o., Vakcinační centrum",Ostrava-město,Moravskoslezský,411801,6009
 94a422eb-b0c6-4729-9224-5c3cf7c0809a,2021-03-05,22,Zdravotní ústav se sídlem v Ostravě,Ostrava-město,Moravskoslezský,411788,5889
 94a422eb-b0c6-4729-9224-5c3cf7c0809a,2021-03-08,11,Zdravotní ústav se sídlem v Ostravě,Ostrava-město,Moravskoslezský,411788,5889
 004e0965-84f6-4aa1-92cb-7242c8ae394a,2021-03-04,20,Nemocnice AGEL Jeseník a.s.,Jeseník,Olomoucký,411771,5992
@@ -201,15 +201,15 @@ cd252dde-b78e-4c74-88e5-e95d894968ab,2021-03-03,110,Klatovská nemocnice,Klatovy
 5960ec70-2686-4b29-8af0-04a1481e7351,2021-03-04,46,Sušická nemocnice,Klatovy,Plzeňský,411761,5984
 af3ecd8e-ad5d-4098-8bcd-bbcee81bfdc0,2021-03-03,37,Stodská nemocnice,Plzeň-jih,Plzeňský,411763,5986
 f6a9ae5b-0d93-4bd4-b630-b3667a9c9059,2021-03-03,77,EUC Klinika Plzeň,Plzeň-město,Plzeňský,411690,5920
+41c51947-5951-432c-9099-bf317756b09d,2021-03-02,42,Fakultní nemocnice Plzeň - očkovací místo,Plzeň-město,Plzeňský,411649,5865
+41c51947-5951-432c-9099-bf317756b09d,2021-03-03,99,Fakultní nemocnice Plzeň - očkovací místo,Plzeň-město,Plzeňský,411649,5865
+41c51947-5951-432c-9099-bf317756b09d,2021-03-04,157,Fakultní nemocnice Plzeň - očkovací místo,Plzeň-město,Plzeňský,411649,5865
 4a387070-9a9b-4824-b1b0-437120b10481,2021-03-03,11,Mulačova nemocnice s.r.o.,Plzeň-město,Plzeňský,411814,6022
 4a387070-9a9b-4824-b1b0-437120b10481,2021-03-04,26,Mulačova nemocnice s.r.o.,Plzeň-město,Plzeňský,411814,6022
 4a387070-9a9b-4824-b1b0-437120b10481,2021-03-08,5,Mulačova nemocnice s.r.o.,Plzeň-město,Plzeňský,411814,6022
 4a387070-9a9b-4824-b1b0-437120b10481,2021-03-09,22,Mulačova nemocnice s.r.o.,Plzeň-město,Plzeňský,411814,6022
 4a387070-9a9b-4824-b1b0-437120b10481,2021-03-10,15,Mulačova nemocnice s.r.o.,Plzeň-město,Plzeňský,411814,6022
 4a387070-9a9b-4824-b1b0-437120b10481,2021-03-11,28,Mulačova nemocnice s.r.o.,Plzeň-město,Plzeňský,411814,6022
-41c51947-5951-432c-9099-bf317756b09d,2021-03-02,42,Fakultní nemocnice Plzeň - očkovací místo,Plzeň-město,Plzeňský,411649,5865
-41c51947-5951-432c-9099-bf317756b09d,2021-03-03,99,Fakultní nemocnice Plzeň - očkovací místo,Plzeň-město,Plzeňský,411649,5865
-41c51947-5951-432c-9099-bf317756b09d,2021-03-04,157,Fakultní nemocnice Plzeň - očkovací místo,Plzeň-město,Plzeňský,411649,5865
 9fe2420e-f2d6-4897-88a9-7b2443b1c701,2021-03-04,31,Manětín - Kulturní dům Manětín,Plzeň-sever,Plzeňský,412030,6320
 7d48eb57-8ab6-4c37-a267-f759c4ec03bb,2021-03-05,15,Plasy - Kulturní dům Plasy,Plzeň-sever,Plzeňský,412031,6323
 333a11ee-363d-499f-90cb-9d61f62543cc,2021-03-05,36,"Rokycanská nemocnice, a. s.",Rokycany,Plzeňský,411758,5981

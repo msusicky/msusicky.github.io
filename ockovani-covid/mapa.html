@@ -75,6 +75,11 @@ COVID očkování</title>
                    href="/ockovani-covid/opendata">Otevřená data
                 </a>
             </li>
+            <li class="nav-item col-lg-auto ml-auto">
+                <a class="nav-link "
+                   href="/ockovani-covid/statistiky">Statistiky
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -455,7 +460,7 @@ COVID očkování</title>
         coords.push(c);
         markers.push(marker);
     
-        var c = SMap.Coords.fromWGS84(16.5704461, 49.1755828);
+        var c = SMap.Coords.fromWGS84(16.5791858, 49.1900431);
 
         var icon = JAK.mel("div");
         
@@ -3906,6 +3911,35 @@ COVID očkování</title>
         coords.push(c);
         markers.push(marker);
     
+        var c = SMap.Coords.fromWGS84(14.40955, 50.06164);
+
+        var icon = JAK.mel("div");
+        
+        var image = JAK.mel("img", {src:SMap.CONFIG.img+"/marker/drop-yellow.png"}, {filter:"grayscale(1)"});
+        
+
+        icon.appendChild(image);
+
+        var options = {
+            title: "Poliklinika Anděl s.r.o., Praha 5 - Smíchov",
+            url: icon
+        }
+        var marker = new SMap.Marker(c, null, options);
+
+        var card = new SMap.Card();
+        card.setSize(450, null)
+        card.getHeader().innerHTML = "<strong>Poliklinika Anděl s.r.o., Praha 5 - Smíchov</strong>";
+        card.getBody().innerHTML = "<strong>Adresa:</strong> Nádražní 762/32, Praha 5 - Smíchov<br>" +
+            "<strong>Bezbariérový přístup:</strong> Ano<br>" +
+            "<strong>Volná místa (příštích 10 dní):</strong> nemáme data<br>" +
+            "<a href=\"./misto/7fd8c9d3-96af-4379-be5c-63849cf5e013\" class=\"btn btn-primary mt-2\">Detail místa</a>";
+        card.getFooter().style = "display: none";
+        card.getContainer().style.padding = "0";
+        marker.decorate(SMap.Marker.Feature.Card, card);
+
+        coords.push(c);
+        markers.push(marker);
+    
         var c = SMap.Coords.fromWGS84(14.48974, 50.12923);
 
         var icon = JAK.mel("div");
@@ -5240,6 +5274,35 @@ COVID očkování</title>
         coords.push(c);
         markers.push(marker);
     
+        var c = SMap.Coords.fromWGS84(15.4598, 49.1835);
+
+        var icon = JAK.mel("div");
+        
+        var image = JAK.mel("img", {src:SMap.CONFIG.img+"/marker/drop-yellow.png"}, {filter:"grayscale(1)"});
+        
+
+        icon.appendChild(image);
+
+        var options = {
+            title: "Poliklinika Telč, spol. s r.o.",
+            url: icon
+        }
+        var marker = new SMap.Marker(c, null, options);
+
+        var card = new SMap.Card();
+        card.setSize(450, null)
+        card.getHeader().innerHTML = "<strong>Poliklinika Telč, spol. s r.o.</strong>";
+        card.getBody().innerHTML = "<strong>Adresa:</strong> Masarykova 330, 588 56 Telč<br>" +
+            "<strong>Bezbariérový přístup:</strong> Ne<br>" +
+            "<strong>Volná místa (příštích 10 dní):</strong> nemáme data<br>" +
+            "<a href=\"./misto/3f0f3044-990c-4143-a85e-9fc16da5bb1b\" class=\"btn btn-primary mt-2\">Detail místa</a>";
+        card.getFooter().style = "display: none";
+        card.getContainer().style.padding = "0";
+        marker.decorate(SMap.Marker.Feature.Card, card);
+
+        coords.push(c);
+        markers.push(marker);
+    
         var c = SMap.Coords.fromWGS84(15.481315, 49.2854428);
 
         var icon = JAK.mel("div");
@@ -5501,6 +5564,64 @@ COVID očkování</title>
         coords.push(c);
         markers.push(marker);
     
+        var c = SMap.Coords.fromWGS84(17.7576, 49.10007);
+
+        var icon = JAK.mel("div");
+        
+        var image = JAK.mel("img", {src:SMap.CONFIG.img+"/marker/drop-yellow.png"}, {filter:"grayscale(1)"});
+        
+
+        icon.appendChild(image);
+
+        var options = {
+            title: "IVF Czech Republic s.r.o. - Luhačovice",
+            url: icon
+        }
+        var marker = new SMap.Marker(c, null, options);
+
+        var card = new SMap.Card();
+        card.setSize(450, null)
+        card.getHeader().innerHTML = "<strong>IVF Czech Republic s.r.o. - Luhačovice</strong>";
+        card.getBody().innerHTML = "<strong>Adresa:</strong> Masarykova 315, 763 26 Luhačovice<br>" +
+            "<strong>Bezbariérový přístup:</strong> Ne<br>" +
+            "<strong>Volná místa (příštích 10 dní):</strong> nemáme data<br>" +
+            "<a href=\"./misto/b61479a7-8702-4529-b0a0-d6f31e635199\" class=\"btn btn-primary mt-2\">Detail místa</a>";
+        card.getFooter().style = "display: none";
+        card.getContainer().style.padding = "0";
+        marker.decorate(SMap.Marker.Feature.Card, card);
+
+        coords.push(c);
+        markers.push(marker);
+    
+        var c = SMap.Coords.fromWGS84(17.6636294, 49.2167472);
+
+        var icon = JAK.mel("div");
+        
+        var image = JAK.mel("img", {src:SMap.CONFIG.img+"/marker/drop-yellow.png"}, {filter:"grayscale(1)"});
+        
+
+        icon.appendChild(image);
+
+        var options = {
+            title: "IVF Czech Republic s.r.o.(Sanatorium Tomášov)",
+            url: icon
+        }
+        var marker = new SMap.Marker(c, null, options);
+
+        var card = new SMap.Card();
+        card.setSize(450, null)
+        card.getHeader().innerHTML = "<strong>IVF Czech Republic s.r.o.(Sanatorium Tomášov)</strong>";
+        card.getBody().innerHTML = "<strong>Adresa:</strong> U Lomu 638, 760 01 Zlín<br>" +
+            "<strong>Bezbariérový přístup:</strong> Ne<br>" +
+            "<strong>Volná místa (příštích 10 dní):</strong> nemáme data<br>" +
+            "<a href=\"./misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a\" class=\"btn btn-primary mt-2\">Detail místa</a>";
+        card.getFooter().style = "display: none";
+        card.getContainer().style.padding = "0";
+        marker.decorate(SMap.Marker.Feature.Card, card);
+
+        coords.push(c);
+        markers.push(marker);
+    
         var c = SMap.Coords.fromWGS84(17.6979639, 49.2284878);
 
         var icon = JAK.mel("div");
@@ -5552,6 +5673,35 @@ COVID očkování</title>
             "<strong>Bezbariérový přístup:</strong> Ano<br>" +
             "<strong>Volná místa (příštích 10 dní):</strong> 0<br>" +
             "<a href=\"./misto/707c3baf-21d0-48e9-b986-49e9f6097701\" class=\"btn btn-primary mt-2\">Detail místa</a>";
+        card.getFooter().style = "display: none";
+        card.getContainer().style.padding = "0";
+        marker.decorate(SMap.Marker.Feature.Card, card);
+
+        coords.push(c);
+        markers.push(marker);
+    
+        var c = SMap.Coords.fromWGS84(17.5262794, 49.2002219);
+
+        var icon = JAK.mel("div");
+        
+        var image = JAK.mel("img", {src:SMap.CONFIG.img+"/marker/drop-yellow.png"}, {filter:"grayscale(1)"});
+        
+
+        icon.appendChild(image);
+
+        var options = {
+            title: "Zorma s.r.o.",
+            url: icon
+        }
+        var marker = new SMap.Marker(c, null, options);
+
+        var card = new SMap.Card();
+        card.setSize(450, null)
+        card.getHeader().innerHTML = "<strong>Zorma s.r.o.</strong>";
+        card.getBody().innerHTML = "<strong>Adresa:</strong> Objízdná 1628, Otrokovice<br>" +
+            "<strong>Bezbariérový přístup:</strong> Ne<br>" +
+            "<strong>Volná místa (příštích 10 dní):</strong> nemáme data<br>" +
+            "<a href=\"./misto/df477c63-b6cc-49b2-aa3c-e9c956232f39\" class=\"btn btn-primary mt-2\">Detail místa</a>";
         card.getFooter().style = "display: none";
         card.getContainer().style.padding = "0";
         marker.decorate(SMap.Marker.Feature.Card, card);
