@@ -33,9 +33,10 @@ COVID očkování</title>
             crossorigin="anonymous"></script>
     <style>.cip-genpw-icon.cip-icon-key-small {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_16x16.png); }
         .cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
+
     </style>
     <script src="https://api.mapy.cz/loader.js"></script>
-	<script>Loader.load()</script>
+    <script>Loader.load()</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXSRVP25Y2"></script>
@@ -44,6 +45,7 @@ COVID očkování</title>
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'G-TXSRVP25Y2');
+
     </script>
 
     
@@ -70,11 +72,11 @@ COVID očkování</title>
                    href="/ockovani-covid/mapa">Mapa
                 </a>
             </li>
-            <li class="nav-item col-lg-auto ml-auto">
-                <a class="nav-link "
-                   href="/ockovani-covid/opendata">Otevřená data
-                </a>
-            </li>
+<!--            <li class="nav-item col-lg-auto ml-auto">-->
+<!--                <a class="nav-link "-->
+<!--                   href="/ockovani-covid/opendata">Otevřená data-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
                    href="/ockovani-covid/statistiky">Statistiky
@@ -87,7 +89,7 @@ COVID očkování</title>
 
 <div class="container mt-4">
     <div class="alert alert-warning alert-dismissible fade show row" role="alert">
-        Poslední aktualizace:&nbsp;<strong>Út 02. 03. 2021 06:36</strong>
+        Poslední aktualizace:&nbsp;<strong>St 03. 03. 2021 08:30</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -105,6 +107,9 @@ COVID očkování</title>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#vaccination">Stav vakcín</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#registration">Stav registrací</a>
             </li>
         </ul>
     </div>
@@ -132,7 +137,8 @@ COVID očkování</title>
                                     <dt>Bezbariérový přístup</dt>
                                     <dd>Ano</dd>
                                 </dl>
-                                <a href="https://cfa.uzis.cz/vaccination-centers/648f87b6-06e7-49d5-b2a7-2dc31c867ff7" class="btn btn-primary" target="_blank">
+                                <a href="https://cfa.uzis.cz/vaccination-centers/648f87b6-06e7-49d5-b2a7-2dc31c867ff7" class="btn btn-primary"
+                                   target="_blank">
                                     Oficiální stránka místa
                                 </a>
                             </div>
@@ -153,127 +159,356 @@ COVID očkování</title>
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped table-sm" style="word-break: break-all">
                         <thead class="thead-dark">
-                            <tr>
-                                <th scope="col" class="text-center w-auto"></th>
-                                
-                                <th scope="col" class="text-center" colspan="2">Přijato</th>
-                                
-                                <th scope="col" class="text-center" colspan="2">Vydáno</th>
-                                
-                                <th scope="col" class="text-center" colspan="2">Očkováno</th>
-                                
-                                <th scope="col" class="text-center" colspan="2">Zničeno</th>
-                                
-                                <th scope="col" class="text-center" colspan="2">Skladem</th>
-                                
-                            </tr>
-                            <tr>
-                                <th scope="col" class="text-center">Výrobce</th>
-                                
-                                    <th scope="col" class="text-center">Ampule</th>
-                                    <th scope="col" class="text-center">Dávky</th>
-                                
-                                    <th scope="col" class="text-center">Ampule</th>
-                                    <th scope="col" class="text-center">Dávky</th>
-                                
-                                    <th scope="col" class="text-center">Ampule</th>
-                                    <th scope="col" class="text-center">Dávky</th>
-                                
-                                    <th scope="col" class="text-center">Ampule</th>
-                                    <th scope="col" class="text-center">Dávky</th>
-                                
-                                    <th scope="col" class="text-center">Ampule</th>
-                                    <th scope="col" class="text-center">Dávky</th>
-                                
-                            </tr>
+                        <tr>
+                            <th scope="col" class="text-center w-auto"></th>
+                            
+                            <th scope="col" class="text-center" colspan="2">Přijato</th>
+                            
+                            <th scope="col" class="text-center" colspan="2">Vydáno</th>
+                            
+                            <th scope="col" class="text-center" colspan="2">Očkováno</th>
+                            
+                            <th scope="col" class="text-center" colspan="2">Zničeno</th>
+                            
+                            <th scope="col" class="text-center" colspan="2">Skladem</th>
+                            
+                        </tr>
+                        <tr>
+                            <th scope="col" class="text-center">Výrobce</th>
+                            
+                            <th scope="col" class="text-center">Ampule</th>
+                            <th scope="col" class="text-center">Dávky</th>
+                            
+                            <th scope="col" class="text-center">Ampule</th>
+                            <th scope="col" class="text-center">Dávky</th>
+                            
+                            <th scope="col" class="text-center">Ampule</th>
+                            <th scope="col" class="text-center">Dávky</th>
+                            
+                            <th scope="col" class="text-center">Ampule</th>
+                            <th scope="col" class="text-center">Dávky</th>
+                            
+                            <th scope="col" class="text-center">Ampule</th>
+                            <th scope="col" class="text-center">Dávky</th>
+                            
+                        </tr>
                         </thead>
                         <tbody>
+                        
+                        <tr>
+                            <td>Pfizer</td>
                             
-                            <tr>
-                                <td>Pfizer</td>
-                                
-                                    <td class="text-right">3130</td>
-                                    <td class="text-right">18780</td>
-                                
-                                    <td class="text-right">115</td>
-                                    <td class="text-right">690</td>
-                                
-                                    <td class="text-right">2800</td>
-                                    <td class="text-right">16800</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">215</td>
-                                    <td class="text-right">1290</td>
-                                
-                            </tr>
+                            <td class="text-right">3520</td>
+                            <td class="text-right">21120</td>
                             
-                            <tr>
-                                <td>Moderna</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                            </tr>
+                            <td class="text-right">115</td>
+                            <td class="text-right">690</td>
                             
-                            <tr>
-                                <td>AstraZeneca</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                            </tr>
+                            <td class="text-right">2806</td>
+                            <td class="text-right">16836</td>
                             
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">599</td>
+                            <td class="text-right">3594</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td>Moderna</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td>AstraZeneca</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                        </tr>
+                        
                         </tbody>
                         <tfoot class="font-weight-bold">
-                            <tr>
-                                <td>Celkem</td>
-                                
-                                    <td class="text-right">3130</td>
-                                    <td class="text-right">18780</td>
-                                
-                                    <td class="text-right">115</td>
-                                    <td class="text-right">690</td>
-                                
-                                    <td class="text-right">2800</td>
-                                    <td class="text-right">16800</td>
-                                
-                                    <td class="text-right">0</td>
-                                    <td class="text-right">0</td>
-                                
-                                    <td class="text-right">215</td>
-                                    <td class="text-right">1290</td>
-                                
-                            </tr>
+                        <tr>
+                            <td>Celkem</td>
+                            
+                            <td class="text-right">3520</td>
+                            <td class="text-right">21120</td>
+                            
+                            <td class="text-right">115</td>
+                            <td class="text-right">690</td>
+                            
+                            <td class="text-right">2806</td>
+                            <td class="text-right">16836</td>
+                            
+                            <td class="text-right">0</td>
+                            <td class="text-right">0</td>
+                            
+                            <td class="text-right">599</td>
+                            <td class="text-right">3594</td>
+                            
+                        </tr>
                         </tfoot>
                     </table>
                 </div>
                 
+            </div>
+            <div class="tab-pane" id="registration">
+                <div class="row">
+                    <div class="col-sm-6 py-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Statistika registrací - čekající</h5>
+                                
+                                <table class="table table-bordered table-striped table-sm">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" class="text-center">Věková skupina</th>
+                                        <th scope="col" class="text-center">Povolání</th>
+                                        <th scope="col" class="text-center">Počet</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                    <tr>
+                                        <td>70-79</td>
+                                        <td>neuvedeno</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    6698
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>70-79</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení/pečující osoba v dětských skupinách (mikrojeslích)/zaměstnanec v přímé péči zajišťující činnost zařízení pro děti vyžadující okamžitou pomoc</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    32
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>70-79</td>
+                                        <td>Zdravotnický pracovník dle §76 a §77 zákona 372/2011  Sb.</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    5
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>80+</td>
+                                        <td>neuvedeno</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    1102
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>80+</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení/pečující osoba v dětských skupinách (mikrojeslích)/zaměstnanec v přímé péči zajišťující činnost zařízení pro děti vyžadující okamžitou pomoc</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    4
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>80+</td>
+                                        <td>Zdravotnický pracovník dle §76 a §77 zákona 372/2011  Sb.</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    2
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>neuvedeno</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení/pečující osoba v dětských skupinách (mikrojeslích)/zaměstnanec v přímé péči zajišťující činnost zařízení pro děti vyžadující okamžitou pomoc</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    3050
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>neuvedeno</td>
+                                        <td>Zdravotnický pracovník dle §76 a §77 zákona 372/2011  Sb.</td>
+                                        <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    199
+                </span>
+                                        </td>
+                                    </tr>
+                                    
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 py-2">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Metriky čekajících</h5>
+                                <p>Jde o poměr přihlášených a získaných míst za posledních 7 dní.</p>
+                                
+                                <table class="table table-bordered table-striped table-sm">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col" class="text-center">Věková skupina</th>
+                                        <th scope="col" class="text-center">Povolání</th>
+                                        <th scope="col" class="text-center">Poměr</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                    <tr>
+                                        <td>70-79</td>
+                                        <td>neuvedeno</td>
+                                        <td class="text-right">
+                                            
+                                            Nejsou data
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>70-79</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení/pečující osoba v dětských skupinách (mikrojeslích)/zaměstnanec v přímé péči zajišťující činnost zařízení pro děti vyžadující okamžitou pomoc</td>
+                                        <td class="text-right">
+                                            
+                                            Nejsou data
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>70-79</td>
+                                        <td>Zdravotnický pracovník dle §76 a §77 zákona 372/2011  Sb.</td>
+                                        <td class="text-right">
+                                            
+                <span class="badge badge-pill badge-warning">
+                    50 %
+                </span>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>80+</td>
+                                        <td>neuvedeno</td>
+                                        <td class="text-right">
+                                            
+                <span class="badge badge-pill badge-success">
+                    79 %
+                </span>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>80+</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení</td>
+                                        <td class="text-right">
+                                            
+                <span class="badge badge-pill badge-success">
+                    100 %
+                </span>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>80+</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení/pečující osoba v dětských skupinách (mikrojeslích)/zaměstnanec v přímé péči zajišťující činnost zařízení pro děti vyžadující okamžitou pomoc</td>
+                                        <td class="text-right">
+                                            
+                <span class="badge badge-pill badge-warning">
+                    43 %
+                </span>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>neuvedeno</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení</td>
+                                        <td class="text-right">
+                                            
+                <span class="badge badge-pill badge-success">
+                    100 %
+                </span>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>neuvedeno</td>
+                                        <td>Pedagogický pracovník/nepedagogický zaměstnanec škol a školských zařízení/pečující osoba v dětských skupinách (mikrojeslích)/zaměstnanec v přímé péči zajišťující činnost zařízení pro děti vyžadující okamžitou pomoc</td>
+                                        <td class="text-right">
+                                            
+                                            Nejsou data
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>neuvedeno</td>
+                                        <td>Zdravotnický pracovník dle §76 a §77 zákona 372/2011  Sb.</td>
+                                        <td class="text-right">
+                                            
+                <span class="badge badge-pill badge-success">
+                    66 %
+                </span>
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                    </tbody>
+                                </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -297,10 +532,10 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Út 02. 03. 2021</td>
+            <td class="text-right">St 03. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-success">
-                    121
+                    120
                 </span>
             </td>
         </tr>
@@ -309,34 +544,10 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>St 03. 03. 2021</td>
-            <td class="text-right">
-                <span class="badge badge-pill badge-success">
-                    127
-                </span>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>Fakultní Thomayerova nemocnice</td>
-            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
-            <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Čt 04. 03. 2021</td>
-            <td class="text-right">
-                <span class="badge badge-pill badge-danger">
-                    0
-                </span>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>Fakultní Thomayerova nemocnice</td>
-            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
-            <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Pá 05. 03. 2021</td>
+            <td class="text-right">Čt 04. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
-                    2
+                    1
                 </span>
             </td>
         </tr>
@@ -345,10 +556,10 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>So 06. 03. 2021</td>
+            <td class="text-right">Pá 05. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
-                    9
+                    13
                 </span>
             </td>
         </tr>
@@ -357,10 +568,10 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Ne 07. 03. 2021</td>
+            <td class="text-right">So 06. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
-                    29
+                    14
                 </span>
             </td>
         </tr>
@@ -369,10 +580,10 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Po 08. 03. 2021</td>
+            <td class="text-right">Ne 07. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
-                    28
+                    30
                 </span>
             </td>
         </tr>
@@ -381,7 +592,7 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Út 09. 03. 2021</td>
+            <td class="text-right">Po 08. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
                     32
@@ -393,7 +604,31 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>St 10. 03. 2021</td>
+            <td class="text-right">Út 09. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    33
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">St 10. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    35
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Čt 11. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
                     34
@@ -405,10 +640,250 @@ COVID očkování</title>
             <td>Fakultní Thomayerova nemocnice</td>
             <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
             <td><a href="../kraj/Praha">Praha</a></td>
-            <td>Čt 11. 03. 2021</td>
+            <td class="text-right">Pá 12. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    42
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">So 13. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    34
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Ne 14. 03. 2021</td>
             <td class="text-right">
                 <span class="badge badge-pill badge-warning">
                     31
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Po 15. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Út 16. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">St 17. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Čt 18. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Pá 19. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">So 20. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Ne 21. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Po 22. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Út 23. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">St 24. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Čt 25. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Pá 26. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">So 27. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Ne 28. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Po 29. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Út 30. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">St 31. 03. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-danger">
+                    0
+                </span>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Fakultní Thomayerova nemocnice</td>
+            <td><a href="../okres/Hlavní město Praha">Hlavní město Praha</a></td>
+            <td><a href="../kraj/Praha">Praha</a></td>
+            <td class="text-right">Čt 01. 04. 2021</td>
+            <td class="text-right">
+                <span class="badge badge-pill badge-warning">
+                    44
                 </span>
             </td>
         </tr>
@@ -435,14 +910,19 @@ COVID očkování</title>
     var options = {};
     var marker = new SMap.Marker(center, "marker", options);
     layer.addMarker(marker);
+
+
+
 </script>
 
 
 <div class="footer text-center p-3 bg-light mt-4">
-    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;Út 02. 03. 2021 06:36. Zdroj mapy: <a href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
+    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;St 03. 03. 2021 08:30. Zdroj mapy: <a
+        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
     <br/>
     <i>
-        Data na tomto webu jsou pouze orientační, bez jakékoliv záruky a nelze je považovat za spolehlivé.
+        Data na tomto webu pochází z opendat Ministerstva zdravotnictví ČR - <a
+            href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19</a>
         Provozovatel se zříká zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
         Pro informace o očkování COVID-19 navštivte web <a href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a>.
     </i>

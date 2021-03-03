@@ -33,9 +33,10 @@ COVID očkování</title>
             crossorigin="anonymous"></script>
     <style>.cip-genpw-icon.cip-icon-key-small {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_16x16.png); }
         .cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
+
     </style>
     <script src="https://api.mapy.cz/loader.js"></script>
-	<script>Loader.load()</script>
+    <script>Loader.load()</script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXSRVP25Y2"></script>
@@ -44,6 +45,7 @@ COVID očkování</title>
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
 	  gtag('config', 'G-TXSRVP25Y2');
+
     </script>
 
     
@@ -70,11 +72,11 @@ COVID očkování</title>
                    href="/ockovani-covid/mapa">Mapa
                 </a>
             </li>
-            <li class="nav-item col-lg-auto ml-auto">
-                <a class="nav-link "
-                   href="/ockovani-covid/opendata">Otevřená data
-                </a>
-            </li>
+<!--            <li class="nav-item col-lg-auto ml-auto">-->
+<!--                <a class="nav-link "-->
+<!--                   href="/ockovani-covid/opendata">Otevřená data-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
                    href="/ockovani-covid/statistiky">Statistiky
@@ -87,7 +89,7 @@ COVID očkování</title>
 
 <div class="container mt-4">
     <div class="alert alert-warning alert-dismissible fade show row" role="alert">
-        Poslední aktualizace:&nbsp;<strong>Út 02. 03. 2021 06:36</strong>
+        Poslední aktualizace:&nbsp;<strong>St 03. 03. 2021 08:30</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
@@ -105,7 +107,7 @@ COVID očkování</title>
                 <th scope="col" class="text-center">Název</th>
                 <th scope="col" class="text-center">Okres</th>
                 <th scope="col" class="text-center">Kraj</th>
-                <th scope="col" class="text-center">Volná&nbsp;místa (příštích&nbsp;10&nbsp;dní)</th>
+                <th scope="col" class="text-center">Volná&nbsp;místa (příštích&nbsp;14&nbsp;dní)</th>
             </tr>
             </thead>
             <tbody>
@@ -115,8 +117,8 @@ COVID očkování</title>
                     <td><a href="./okres/České Budějovice">České Budějovice</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            40
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -127,7 +129,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            222
+                            119
                         </span>
                     </td>
                 </tr>
@@ -137,8 +139,8 @@ COVID očkování</title>
                     <td><a href="./okres/Jindřichův Hradec">Jindřichův Hradec</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            4
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -159,8 +161,8 @@ COVID očkování</title>
                     <td><a href="./okres/Prachatice">Prachatice</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            60
+                        <span class="badge badge-pill badge-success">
+                            846
                         </span>
                     </td>
                 </tr>
@@ -170,8 +172,8 @@ COVID očkování</title>
                     <td><a href="./okres/Strakonice">Strakonice</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            197
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -181,8 +183,19 @@ COVID očkování</title>
                     <td><a href="./okres/Tábor">Tábor</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            9
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/2606719f-ddd9-4b63-8a67-68236380820f">Nemocnice Blansko</a></td>
+                    <td><a href="./okres/Blansko">Blansko</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            243
                         </span>
                     </td>
                 </tr>
@@ -193,7 +206,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            71
+                            1
                         </span>
                     </td>
                 </tr>
@@ -203,8 +216,8 @@ COVID očkování</title>
                     <td><a href="./okres/Břeclav">Břeclav</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            32
+                        <span class="badge badge-pill badge-success">
+                            123
                         </span>
                     </td>
                 </tr>
@@ -215,7 +228,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            14
+                            76
                         </span>
                     </td>
                 </tr>
@@ -226,7 +239,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            164
+                            1342
                         </span>
                     </td>
                 </tr>
@@ -236,8 +249,8 @@ COVID očkování</title>
                     <td><a href="./okres/Brno-město">Brno-město</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            961
                         </span>
                     </td>
                 </tr>
@@ -258,8 +271,8 @@ COVID očkování</title>
                     <td><a href="./okres/Brno-město">Brno-město</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            209
                         </span>
                     </td>
                 </tr>
@@ -269,8 +282,8 @@ COVID očkování</title>
                     <td><a href="./okres/Brno-město">Brno-město</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            287
                         </span>
                     </td>
                 </tr>
@@ -280,8 +293,8 @@ COVID očkování</title>
                     <td><a href="./okres/Brno-město">Brno-město</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            12
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -303,18 +316,29 @@ COVID očkování</title>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            6
+                            15
                         </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/7db4f337-4936-4175-b7a9-4ddffa91b6f4">Nemocnice Kyjov, příspěvková organizace Městské kulturní středisko Kyjov - očkovací centrum COVID-19</a></td>
+                    <td><a href="./misto/7db4f337-4936-4175-b7a9-4ddffa91b6f4">Kyjov Městské kulturní středisko</a></td>
                     <td><a href="./okres/Hodonín">Hodonín</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            444
+                            308
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/ccccfd3b-1362-49d5-b3b6-b0f71dc6d572">Nemocnice TGM Hodonín</a></td>
+                    <td><a href="./okres/Hodonín">Hodonín</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            35
                         </span>
                     </td>
                 </tr>
@@ -324,8 +348,8 @@ COVID očkování</title>
                     <td><a href="./okres/Vyškov">Vyškov</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            99
+                        <span class="badge badge-pill badge-success">
+                            185
                         </span>
                     </td>
                 </tr>
@@ -335,8 +359,8 @@ COVID očkování</title>
                     <td><a href="./okres/Znojmo">Znojmo</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            531
                         </span>
                     </td>
                 </tr>
@@ -346,8 +370,8 @@ COVID očkování</title>
                     <td><a href="./okres/Cheb">Cheb</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            367
                         </span>
                     </td>
                 </tr>
@@ -357,8 +381,8 @@ COVID očkování</title>
                     <td><a href="./okres/Cheb">Cheb</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            31
+                        <span class="badge badge-pill badge-success">
+                            234
                         </span>
                     </td>
                 </tr>
@@ -368,8 +392,8 @@ COVID očkování</title>
                     <td><a href="./okres/Cheb">Cheb</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            45
+                        <span class="badge badge-pill badge-success">
+                            101
                         </span>
                     </td>
                 </tr>
@@ -380,7 +404,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            1441
+                            1772
                         </span>
                     </td>
                 </tr>
@@ -390,8 +414,8 @@ COVID očkování</title>
                     <td><a href="./okres/Karlovy Vary">Karlovy Vary</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            4
+                        <span class="badge badge-pill badge-success">
+                            8742
                         </span>
                     </td>
                 </tr>
@@ -401,8 +425,8 @@ COVID očkování</title>
                     <td><a href="./okres/Karlovy Vary">Karlovy Vary</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            58
+                        <span class="badge badge-pill badge-success">
+                            120
                         </span>
                     </td>
                 </tr>
@@ -412,8 +436,8 @@ COVID očkování</title>
                     <td><a href="./okres/Sokolov">Sokolov</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            32
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -434,8 +458,8 @@ COVID očkování</title>
                     <td><a href="./okres/Jičín">Jičín</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            107
                         </span>
                     </td>
                 </tr>
@@ -456,8 +480,8 @@ COVID očkování</title>
                     <td><a href="./okres/Rychnov nad Kněžnou">Rychnov nad Kněžnou</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            148
                         </span>
                     </td>
                 </tr>
@@ -468,7 +492,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            57
+                            92
                         </span>
                     </td>
                 </tr>
@@ -479,7 +503,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            80
+                            84
                         </span>
                     </td>
                 </tr>
@@ -489,8 +513,19 @@ COVID očkování</title>
                     <td><a href="./okres/Trutnov">Trutnov</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            92
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/cb0f8a24-3c54-467e-9e67-de01f424ea85">Česká Lípa očkovací místo  Crystal</a></td>
+                    <td><a href="./okres/Česká Lípa">Česká Lípa</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            110
+                            658
                         </span>
                     </td>
                 </tr>
@@ -500,8 +535,8 @@ COVID očkování</title>
                     <td><a href="./okres/Česká Lípa">Česká Lípa</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            801
                         </span>
                     </td>
                 </tr>
@@ -512,7 +547,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            102
+                            214
                         </span>
                     </td>
                 </tr>
@@ -534,7 +569,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            146
+                            333
                         </span>
                     </td>
                 </tr>
@@ -544,8 +579,8 @@ COVID očkování</title>
                     <td><a href="./okres/Liberec">Liberec</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            215
                         </span>
                     </td>
                 </tr>
@@ -567,7 +602,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            23
+                            27
                         </span>
                     </td>
                 </tr>
@@ -577,8 +612,19 @@ COVID očkování</title>
                     <td><a href="./okres/Semily">Semily</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            109
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4938a85d-84a8-4b1e-bc65-87a6dac5efa5">Masarykova městská nemocnice a.s. (Jilemnice)</a></td>
+                    <td><a href="./okres/Semily">Semily</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            258
                         </span>
                     </td>
                 </tr>
@@ -588,8 +634,8 @@ COVID očkování</title>
                     <td><a href="./okres/Semily">Semily</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            21
                         </span>
                     </td>
                 </tr>
@@ -599,8 +645,8 @@ COVID očkování</title>
                     <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            15
+                        <span class="badge badge-pill badge-success">
+                            115
                         </span>
                     </td>
                 </tr>
@@ -610,8 +656,8 @@ COVID očkování</title>
                     <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            117
                         </span>
                     </td>
                 </tr>
@@ -632,8 +678,8 @@ COVID očkování</title>
                     <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            63
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -643,8 +689,8 @@ COVID očkování</title>
                     <td><a href="./okres/Frýdek-Místek">Frýdek-Místek</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            25
                         </span>
                     </td>
                 </tr>
@@ -654,8 +700,8 @@ COVID očkování</title>
                     <td><a href="./okres/Frýdek-Místek">Frýdek-Místek</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            192
                         </span>
                     </td>
                 </tr>
@@ -666,7 +712,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            272
+                            256
                         </span>
                     </td>
                 </tr>
@@ -677,7 +723,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            200
+                            132
                         </span>
                     </td>
                 </tr>
@@ -687,8 +733,8 @@ COVID očkování</title>
                     <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            4
                         </span>
                     </td>
                 </tr>
@@ -698,8 +744,8 @@ COVID očkování</title>
                     <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            12
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -721,7 +767,18 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            315
+                            393
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/77e3d92d-123b-452d-93ec-30afac4e2c0b">Nemocnice s poliklinikou Karviná-Ráj, p.o.</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -731,8 +788,8 @@ COVID očkování</title>
                     <td><a href="./okres/Nový Jičín">Nový Jičín</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            22
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -760,12 +817,12 @@ COVID očkování</title>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/d58b9a53-e9a4-4374-9853-1d93c4540fb4">THERÁPON 98, a.s.</a></td>
+                    <td><a href="./misto/d58b9a53-e9a4-4374-9853-1d93c4540fb4">THERÁPON 98, a.s. - Kopřivnice</a></td>
                     <td><a href="./okres/Nový Jičín">Nový Jičín</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            12
+                        <span class="badge badge-pill badge-success">
+                            137
                         </span>
                     </td>
                 </tr>
@@ -775,8 +832,8 @@ COVID očkování</title>
                     <td><a href="./okres/Opava">Opava</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            2910
                         </span>
                     </td>
                 </tr>
@@ -787,7 +844,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            694
+                            1666
                         </span>
                     </td>
                 </tr>
@@ -808,8 +865,8 @@ COVID očkování</title>
                     <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            112
+                        <span class="badge badge-pill badge-warning">
+                            60
                         </span>
                     </td>
                 </tr>
@@ -820,7 +877,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            2270
+                            3734
                         </span>
                     </td>
                 </tr>
@@ -831,7 +888,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            1677
+                            4216
                         </span>
                     </td>
                 </tr>
@@ -852,8 +909,8 @@ COVID očkování</title>
                     <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            48
+                        <span class="badge badge-pill badge-success">
+                            192
                         </span>
                     </td>
                 </tr>
@@ -874,8 +931,8 @@ COVID očkování</title>
                     <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            4
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -885,8 +942,8 @@ COVID očkování</title>
                     <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            14
                         </span>
                     </td>
                 </tr>
@@ -908,7 +965,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            33
+                            41
                         </span>
                     </td>
                 </tr>
@@ -919,7 +976,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            79
+                            23
                         </span>
                     </td>
                 </tr>
@@ -929,8 +986,8 @@ COVID očkování</title>
                     <td><a href="./okres/Olomouc">Olomouc</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            80
                         </span>
                     </td>
                 </tr>
@@ -941,7 +998,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            131
+                            168
                         </span>
                     </td>
                 </tr>
@@ -952,7 +1009,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            160
+                            147
                         </span>
                     </td>
                 </tr>
@@ -962,8 +1019,8 @@ COVID očkování</title>
                     <td><a href="./okres/Olomouc">Olomouc</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            453
                         </span>
                     </td>
                 </tr>
@@ -995,8 +1052,8 @@ COVID očkování</title>
                     <td><a href="./okres/Prostějov">Prostějov</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            17
                         </span>
                     </td>
                 </tr>
@@ -1006,8 +1063,8 @@ COVID očkování</title>
                     <td><a href="./okres/Šumperk">Šumperk</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            36
+                        <span class="badge badge-pill badge-success">
+                            105
                         </span>
                     </td>
                 </tr>
@@ -1017,8 +1074,8 @@ COVID očkování</title>
                     <td><a href="./okres/Chrudim">Chrudim</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            214
                         </span>
                     </td>
                 </tr>
@@ -1039,8 +1096,8 @@ COVID očkování</title>
                     <td><a href="./okres/Pardubice">Pardubice</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            154
                         </span>
                     </td>
                 </tr>
@@ -1084,7 +1141,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            69
+                            22
                         </span>
                     </td>
                 </tr>
@@ -1094,8 +1151,8 @@ COVID očkování</title>
                     <td><a href="./okres/Klatovy">Klatovy</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            110
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1105,19 +1162,19 @@ COVID očkování</title>
                     <td><a href="./okres/Klatovy">Klatovy</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            78
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/af3ecd8e-ad5d-4098-8bcd-bbcee81bfdc0">Stodská nemocnice</a></td>
+                    <td><a href="./misto/6ce2ad8f-b1f6-4252-b6f0-e8029219c17b">Stodská nemocnice - očkovací místo Kulturní dům Stod</a></td>
                     <td><a href="./okres/Plzeň-jih">Plzeň-jih</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            37
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1127,8 +1184,8 @@ COVID očkování</title>
                     <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            4
                         </span>
                     </td>
                 </tr>
@@ -1138,8 +1195,8 @@ COVID očkování</title>
                     <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            77
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1149,8 +1206,8 @@ COVID očkování</title>
                     <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            298
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1160,8 +1217,8 @@ COVID očkování</title>
                     <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            107
+                        <span class="badge badge-pill badge-warning">
+                            30
                         </span>
                     </td>
                 </tr>
@@ -1171,8 +1228,8 @@ COVID očkování</title>
                     <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            16
                         </span>
                     </td>
                 </tr>
@@ -1183,24 +1240,13 @@ COVID očkování</title>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            31
+                            78
                         </span>
                     </td>
                 </tr>
             
                 <tr>
                     <td><a href="./misto/7d48eb57-8ab6-4c37-a267-f759c4ec03bb">Plasy - Kulturní dům Plasy</a></td>
-                    <td><a href="./okres/Plzeň-sever">Plzeň-sever</a></td>
-                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
-                    <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            15
-                        </span>
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td><a href="./misto/28f83d48-bce8-4d12-9b1f-4316e973c02f">Privamed</a></td>
                     <td><a href="./okres/Plzeň-sever">Plzeň-sever</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
@@ -1211,12 +1257,23 @@ COVID očkování</title>
                 </tr>
             
                 <tr>
+                    <td><a href="./misto/28f83d48-bce8-4d12-9b1f-4316e973c02f">Privamed</a></td>
+                    <td><a href="./okres/Plzeň-sever">Plzeň-sever</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            40
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
                     <td><a href="./misto/333a11ee-363d-499f-90cb-9d61f62543cc">Rokycanská nemocnice, a. s.</a></td>
                     <td><a href="./okres/Rokycany">Rokycany</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            36
+                            42
                         </span>
                     </td>
                 </tr>
@@ -1226,8 +1283,8 @@ COVID očkování</title>
                     <td><a href="./okres/Tachov">Tachov</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            33
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1248,8 +1305,8 @@ COVID očkování</title>
                     <td><a href="./okres/Tachov">Tachov</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            50
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1271,7 +1328,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            46
+                            58
                         </span>
                     </td>
                 </tr>
@@ -1282,7 +1339,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            356
+                            188
                         </span>
                     </td>
                 </tr>
@@ -1293,7 +1350,29 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            180
+                            320
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b2d0f892-c779-4cba-8b55-1ed3e8de0e4c">EUC Klinika Praha a.s. - Plaňanská</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b8908961-8b5d-46d6-ad40-89bceacd7874">EUC klinika Praha a.s. - Šustova, Praha 11</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            239
                         </span>
                     </td>
                 </tr>
@@ -1303,8 +1382,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            2572
                         </span>
                     </td>
                 </tr>
@@ -1315,7 +1394,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            533
+                            508
                         </span>
                     </td>
                 </tr>
@@ -1326,7 +1405,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            1063
+                            417
                         </span>
                     </td>
                 </tr>
@@ -1337,7 +1416,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            413
+                            419
                         </span>
                     </td>
                 </tr>
@@ -1348,7 +1427,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            11
+                            41
                         </span>
                     </td>
                 </tr>
@@ -1359,7 +1438,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            16
+                            69
                         </span>
                     </td>
                 </tr>
@@ -1369,8 +1448,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            26
                         </span>
                     </td>
                 </tr>
@@ -1380,8 +1459,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            3
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1391,8 +1470,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            165
                         </span>
                     </td>
                 </tr>
@@ -1413,8 +1492,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            864
                         </span>
                     </td>
                 </tr>
@@ -1425,7 +1504,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            150
+                            580
                         </span>
                     </td>
                 </tr>
@@ -1436,7 +1515,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            185
+                            619
                         </span>
                     </td>
                 </tr>
@@ -1446,8 +1525,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            86
+                        <span class="badge badge-pill badge-success">
+                            306
                         </span>
                     </td>
                 </tr>
@@ -1458,13 +1537,35 @@ COVID očkování</title>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            1275
+                            1900
                         </span>
                     </td>
                 </tr>
             
                 <tr>
                     <td><a href="./misto/44133735-28b0-4c07-a675-f6613a761f8c">Nemocnice Sv. Kříže Žižkov</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            223
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/724a30ec-c666-42e1-81ca-9df326988d73">Poliklinika Agel Praha</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/7fd8c9d3-96af-4379-be5c-63849cf5e013">Poliklinika Anděl s.r.o., Praha 5 - Smíchov</a></td>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
@@ -1479,8 +1580,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            85
+                        <span class="badge badge-pill badge-success">
+                            103
                         </span>
                     </td>
                 </tr>
@@ -1490,8 +1591,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            29
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1501,8 +1602,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            12
+                        <span class="badge badge-pill badge-success">
+                            133
                         </span>
                     </td>
                 </tr>
@@ -1512,8 +1613,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            409
                         </span>
                     </td>
                 </tr>
@@ -1534,8 +1635,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            161
+                        <span class="badge badge-pill badge-warning">
+                            83
                         </span>
                     </td>
                 </tr>
@@ -1556,8 +1657,8 @@ COVID očkování</title>
                     <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            77
                         </span>
                     </td>
                 </tr>
@@ -1568,7 +1669,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            16
+                            13
                         </span>
                     </td>
                 </tr>
@@ -1578,8 +1679,8 @@ COVID očkování</title>
                     <td><a href="./okres/Beroun">Beroun</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            6
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1589,8 +1690,8 @@ COVID očkování</title>
                     <td><a href="./okres/Beroun">Beroun</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            1
+                        <span class="badge badge-pill badge-success">
+                            742
                         </span>
                     </td>
                 </tr>
@@ -1601,7 +1702,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            259
+                            595
                         </span>
                     </td>
                 </tr>
@@ -1623,7 +1724,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            295
+                            300
                         </span>
                     </td>
                 </tr>
@@ -1644,8 +1745,8 @@ COVID očkování</title>
                     <td><a href="./okres/Kutná Hora">Kutná Hora</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            132
+                        <span class="badge badge-pill badge-warning">
+                            67
                         </span>
                     </td>
                 </tr>
@@ -1655,8 +1756,8 @@ COVID očkování</title>
                     <td><a href="./okres/Mělník">Mělník</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            77
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1666,8 +1767,8 @@ COVID očkování</title>
                     <td><a href="./okres/Mělník">Mělník</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            9
+                        <span class="badge badge-pill badge-success">
+                            116
                         </span>
                     </td>
                 </tr>
@@ -1677,8 +1778,8 @@ COVID očkování</title>
                     <td><a href="./okres/Mělník">Mělník</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            220
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1688,8 +1789,8 @@ COVID očkování</title>
                     <td><a href="./okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            73
+                        <span class="badge badge-pill badge-success">
+                            285
                         </span>
                     </td>
                 </tr>
@@ -1699,8 +1800,8 @@ COVID očkování</title>
                     <td><a href="./okres/Nymburk">Nymburk</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            33
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1710,8 +1811,8 @@ COVID očkování</title>
                     <td><a href="./okres/Nymburk">Nymburk</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            96
+                        <span class="badge badge-pill badge-success">
+                            134
                         </span>
                     </td>
                 </tr>
@@ -1719,6 +1820,28 @@ COVID očkování</title>
                 <tr>
                     <td><a href="./misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
                     <td><a href="./okres/Praha-východ">Praha-východ</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            380
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="./okres/Praha-východ">Praha-východ</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům</a></td>
+                    <td><a href="./okres/Příbram">Příbram</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-danger">
@@ -1732,8 +1855,8 @@ COVID očkování</title>
                     <td><a href="./okres/Příbram">Příbram</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            45
+                        <span class="badge badge-pill badge-success">
+                            129
                         </span>
                     </td>
                 </tr>
@@ -1744,7 +1867,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            798
+                            748
                         </span>
                     </td>
                 </tr>
@@ -1765,8 +1888,8 @@ COVID očkování</title>
                     <td><a href="./okres/Chomutov">Chomutov</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            64
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1787,8 +1910,8 @@ COVID očkování</title>
                     <td><a href="./okres/Děčín">Děčín</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            124
+                        <span class="badge badge-pill badge-warning">
+                            44
                         </span>
                     </td>
                 </tr>
@@ -1799,18 +1922,18 @@ COVID očkování</title>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            7
+                            55
                         </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/fbbde94b-4a74-41a3-93e1-c3fc53cf2189">Krajská zdravotní a.s., - Masarykova nem. v Ústí nad Labem, o.z. pracoviště výstaviště Litoměřice</a></td>
+                    <td><a href="./misto/fbbde94b-4a74-41a3-93e1-c3fc53cf2189">Krajská zdravotní a.s., - MNUL - Zahrada Čech Litoměřice</a></td>
                     <td><a href="./okres/Litoměřice">Litoměřice</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            13
                         </span>
                     </td>
                 </tr>
@@ -1821,7 +1944,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            40
+                            20
                         </span>
                     </td>
                 </tr>
@@ -1832,7 +1955,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            45
+                            50
                         </span>
                     </td>
                 </tr>
@@ -1842,8 +1965,8 @@ COVID očkování</title>
                     <td><a href="./okres/Louny">Louny</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-success">
+                            199
                         </span>
                     </td>
                 </tr>
@@ -1854,7 +1977,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            105
+                            106
                         </span>
                     </td>
                 </tr>
@@ -1865,7 +1988,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            50
+                            88
                         </span>
                     </td>
                 </tr>
@@ -1875,19 +1998,19 @@ COVID očkování</title>
                     <td><a href="./okres/Most">Most</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            22
                         </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/d149c33b-4906-410d-948d-25128f4aa4d7">Hornická nemocnice s poliklinikou spol. s.r.o.</a></td>
+                    <td><a href="./misto/d149c33b-4906-410d-948d-25128f4aa4d7">Hornická nemocnice s poliklinikou spol. s.r.o. - Bílina</a></td>
                     <td><a href="./okres/Teplice">Teplice</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            143
+                            413
                         </span>
                     </td>
                 </tr>
@@ -1897,8 +2020,8 @@ COVID očkování</title>
                     <td><a href="./okres/Teplice">Teplice</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            41
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1908,8 +2031,8 @@ COVID očkování</title>
                     <td><a href="./okres/Ústí nad Labem">Ústí nad Labem</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            658
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1919,8 +2042,8 @@ COVID očkování</title>
                     <td><a href="./okres/Ústí nad Labem">Ústí nad Labem</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">
-                            0
+                        <span class="badge badge-pill badge-warning">
+                            35
                         </span>
                     </td>
                 </tr>
@@ -1931,7 +2054,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            27
+                            25
                         </span>
                     </td>
                 </tr>
@@ -1941,8 +2064,19 @@ COVID očkování</title>
                     <td><a href="./okres/Jihlava">Jihlava</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            47
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/3f0f3044-990c-4143-a85e-9fc16da5bb1b">Poliklinika Telč, spol. s r.o.</a></td>
+                    <td><a href="./okres/Jihlava">Jihlava</a></td>
+                    <td><a href="./kraj/Vysočina">Vysočina</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1953,7 +2087,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            203
+                            510
                         </span>
                     </td>
                 </tr>
@@ -1964,7 +2098,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            201
+                            110
                         </span>
                     </td>
                 </tr>
@@ -1985,8 +2119,8 @@ COVID očkování</title>
                     <td><a href="./okres/Žďár nad Sázavou">Žďár nad Sázavou</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">
-                            311
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -1997,7 +2131,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            15
+                            5
                         </span>
                     </td>
                 </tr>
@@ -2019,7 +2153,7 @@ COVID očkování</title>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-warning">
-                            21
+                            28
                         </span>
                     </td>
                 </tr>
@@ -2029,8 +2163,8 @@ COVID očkování</title>
                     <td><a href="./okres/Vsetín">Vsetín</a></td>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            43
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -2040,8 +2174,30 @@ COVID očkování</title>
                     <td><a href="./okres/Vsetín">Vsetín</a></td>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-warning">
-                            91
+                        <span class="badge badge-pill badge-success">
+                            113
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b61479a7-8702-4529-b0a0-d6f31e635199">IVF Czech Republic s.r.o. - Luhačovice</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o.(Sanatorium Tomášov)</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
                         </span>
                     </td>
                 </tr>
@@ -2052,13 +2208,24 @@ COVID očkování</title>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
                         <span class="badge badge-pill badge-success">
-                            342
+                            344
                         </span>
                     </td>
                 </tr>
             
                 <tr>
                     <td><a href="./misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
                     <td><a href="./okres/Zlín">Zlín</a></td>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
@@ -2079,10 +2246,12 @@ COVID očkování</title>
 
 
 <div class="footer text-center p-3 bg-light mt-4">
-    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;Út 02. 03. 2021 06:36. Zdroj mapy: <a href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
+    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;St 03. 03. 2021 08:30. Zdroj mapy: <a
+        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
     <br/>
     <i>
-        Data na tomto webu jsou pouze orientační, bez jakékoliv záruky a nelze je považovat za spolehlivé.
+        Data na tomto webu pochází z opendat Ministerstva zdravotnictví ČR - <a
+            href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19</a>
         Provozovatel se zříká zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
         Pro informace o očkování COVID-19 navštivte web <a href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a>.
     </i>
