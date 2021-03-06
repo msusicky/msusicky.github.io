@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -16,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-Středočeský kraj |
+Středočeský |
 COVID očkování</title>
 
     
@@ -34,19 +35,23 @@ COVID očkování</title>
         .cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
 
     </style>
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXSRVP25Y2"></script>
     <script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-TXSRVP25Y2');
 
     </script>
+
     
 </head>
 <body>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/ockovani-covid/">COVID očkování</a>
@@ -59,33 +64,38 @@ COVID očkování</title>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="/ockovani-covid/info">Přehled očkovacích
-                    míst</a>
+                   href="/ockovani-covid/mista">Přehled očkovacích míst
+                </a>
+                <a class="nav-link "
+                   href="/ockovani-covid/info" style="display: none">Přehled očkovacích míst
+                </a>
             </li>
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity.csv"
-                   target="_blank">RAW data</a>
+                   href="/ockovani-covid/mapa">Mapa
+                </a>
             </li>
+<!--            <li class="nav-item col-lg-auto ml-auto">-->
+<!--                <a class="nav-link "-->
+<!--                   href="/ockovani-covid/opendata">Otevřená data-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity_csv.csv"
-                   target="_blank">CSV data</a>
+                   href="/ockovani-covid/statistiky">Statistiky
+                </a>
             </li>
-            <!--      <li class="nav-item">-->
-            <!--         <a class="nav-link disabled" href="/hlidac">Hlídání</a> -->
-            <!--      </li>-->
         </ul>
     </div>
 </nav>
 
 
 <div class="container mt-4">
-    <div class="alert alert-warning alert-dismissible fade show row" role="alert">
-        Poslední aktualizace: <strong> 27. 02. 2021 06:24 </strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="alert alert-danger row" role="alert">
+        <p class="mb-0">
+            Web byl přestěhován na: <a class="alert-link" href="https://ockovani.opendatalab.cz">https://ockovani.opendatalab.cz</a>.
+            Data na této stránce <strong>nejsou dále aktualizována!</strong>
+        </p>
     </div>
     
     <div class="row">
@@ -98,7 +108,7 @@ COVID očkování</title>
             <thead  class="thead-dark">
             <tr>
                 <th scope="col" class="text-center">Název</th>
-                <th scope="col" class="text-center">Město</th>
+                <th scope="col" class="text-center">Okres</th>
                 <th scope="col" class="text-center">Kraj</th>
                 <th scope="col" class="text-center">Datum</th>
                 <th scope="col" class="text-center">Volná místa</th>
@@ -107,902 +117,3362 @@ COVID očkování</title>
             <tbody>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            111
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">1</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">1</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">209</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">96</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">59</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">37</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">13</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">294</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">114</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">222</span>
+                        <span class="badge badge-pill badge-warning">
+                            75
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">284</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">1</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">2</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">285</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">116</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">129</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">297</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">42</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
                     <td>Středočeský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">298</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">53</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">23</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            17
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
                     <td>Středočeský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            119
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="../mesto/Benešov">Benešov</a></td>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">99</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="../mesto/Kladno">Kladno</a></td>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="../mesto/Kolín">Kolín</a></td>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="../mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="../mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="../mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="../mesto/Příbram">Příbram</a></td>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="../mesto/Říčany">Říčany</a></td>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="../mesto/Slaný">Slaný</a></td>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
                     <td>Středočeský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 10. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            126
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            118
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            19
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            117
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="../okres/Rakovník">Rakovník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            128
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="../okres/Praha-východ">Praha-východ</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="../okres/Kutná Hora">Kutná Hora</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="../okres/Benešov">Benešov</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="../okres/Kladno">Kladno</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="../okres/Kolín">Kolín</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="../okres/Příbram">Příbram</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="../okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="../okres/Beroun">Beroun</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="../okres/Mělník">Mělník</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="../okres/Nymburk">Nymburk</a></td>
+                    <td>Středočeský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
@@ -1015,22 +3485,17 @@ COVID očkování</title>
 
 
 
-    <script>
-        
-        $SCRIPT_ROOT = "";
-    </script>
 
 <div class="footer text-center p-3 bg-light mt-4">
-    Vznik 16. 01. 2021, poslední aktualizace 27. 02. 2021 06:24. <a
-        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">Zdroj mapy www.mylog.cz.</a>
+    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;So 06. 03. 2021 08:07. Zdroj mapy: <a
+        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
     <br/>
-    <i>Data na tomto webu jsou pouze orientační, bez
-        jakékoliv záruky a nelze je považovat za spolehlivé. Provozovatel se zříká zodpovědnosti za veškeré škody a
-        újmy,
-        které by použitím těchto dat mohly vzniknout. Web slouží pouze k testování schopností programovacího jazyka
-        Python a
-        podobnost s reálnými skutečnostmi je čistě náhodná. Pro informace o očkování COVID-19 navštivte web <a
-                href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a></i>
+    <i>
+        Data na tomto webu pochází z opendat Ministerstva zdravotnictví ČR - <a
+            href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19</a>
+        Provozovatel se zříká zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
+        Pro informace o očkování COVID-19 navštivte web <a href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a>.
+    </i>
 </div>
 </body>
 </html>

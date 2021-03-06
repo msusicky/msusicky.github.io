@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -15,7 +16,9 @@
     <![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>COVID očkování</title>
+    <title>
+Přehled očkovacích míst |
+COVID očkování</title>
 
     
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -32,19 +35,23 @@
         .cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
 
     </style>
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXSRVP25Y2"></script>
     <script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-TXSRVP25Y2');
 
     </script>
+
     
 </head>
 <body>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/ockovani-covid/">COVID očkování</a>
@@ -56,34 +63,39 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item col-lg-auto ml-auto">
+                <a class="nav-link "
+                   href="/ockovani-covid/mista">Přehled očkovacích míst
+                </a>
                 <a class="nav-link active"
-                   href="/ockovani-covid/info">Přehled očkovacích
-                    míst</a>
+                   href="/ockovani-covid/info" style="display: none">Přehled očkovacích míst
+                </a>
             </li>
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity.csv"
-                   target="_blank">RAW data</a>
+                   href="/ockovani-covid/mapa">Mapa
+                </a>
             </li>
+<!--            <li class="nav-item col-lg-auto ml-auto">-->
+<!--                <a class="nav-link "-->
+<!--                   href="/ockovani-covid/opendata">Otevřená data-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity_csv.csv"
-                   target="_blank">CSV data</a>
+                   href="/ockovani-covid/statistiky">Statistiky
+                </a>
             </li>
-            <!--      <li class="nav-item">-->
-            <!--         <a class="nav-link disabled" href="/hlidac">Hlídání</a> -->
-            <!--      </li>-->
         </ul>
     </div>
 </nav>
 
 
 <div class="container mt-4">
-    <div class="alert alert-warning alert-dismissible fade show row" role="alert">
-        Poslední aktualizace: <strong> 27. 02. 2021 06:24 </strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="alert alert-danger row" role="alert">
+        <p class="mb-0">
+            Web byl přestěhován na: <a class="alert-link" href="https://ockovani.opendatalab.cz">https://ockovani.opendatalab.cz</a>.
+            Data na této stránce <strong>nejsou dále aktualizována!</strong>
+        </p>
     </div>
     
     <div class="row">
@@ -96,910 +108,2188 @@
             <thead  class="thead-dark">
             <tr>
                 <th scope="col" class="text-center">Název</th>
-                <th scope="col" class="text-center">Město</th>
+                <th scope="col" class="text-center">Okres</th>
                 <th scope="col" class="text-center">Kraj</th>
-                <th scope="col" class="text-center">Volná místa (příštích 10 dní)</th>
+                <th scope="col" class="text-center">Volná&nbsp;místa (příštích&nbsp;14&nbsp;dní)</th>
             </tr>
             </thead>
             <tbody>
             
                 <tr>
-                    <td><a href="./misto/7">Očkovací centrum Výstaviště České Budějovice (pavilon T1, vstup od Tesca)</a></td>
-                    <td><a href="./mesto/České Budějovice">České Budějovice</a></td>
+                    <td><a href="./misto/ade1335c-0185-4292-af9a-5de58be97774">Nemocnice České Budějovice - OČM Výstaviště České Budějovice</a></td>
+                    <td><a href="./okres/České Budějovice">České Budějovice</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">67</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/267">Nemocnice Jindřichův Hradec, a.s.</a></td>
-                    <td><a href="./mesto/Jindřichův Hradec">Jindřichův Hradec</a></td>
+                    <td><a href="./misto/e7d3f647-96bc-44ba-88d2-77e1b2b1be48">Nemocnice Český Krumlov - OČKO Sportovní hala</a></td>
+                    <td><a href="./okres/Český Krumlov">Český Krumlov</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            900
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/66">Nemocnice Prachatice, a.s.</a></td>
-                    <td><a href="./mesto/Prachatice">Prachatice</a></td>
+                    <td><a href="./misto/c4411674-d3bd-4666-96df-fdedefed8b68">Nemocnice Jindřichův Hradec- Očko VŠE</a></td>
+                    <td><a href="./okres/Jindřichův Hradec">Jindřichův Hradec</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/69">Nemocnice Strakonice, a.s. - infekční ambulance</a></td>
-                    <td><a href="./mesto/Strakonice">Strakonice</a></td>
+                    <td><a href="./misto/1ae4455d-99b0-4baa-9613-4cd2fb67ac4e">Nemocnice Písek - OČKO</a></td>
+                    <td><a href="./okres/Písek">Písek</a></td>
                     <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/50">BVV velkokapacitní očkovací centrum</a></td>
-                    <td><a href="./mesto/Brno">Brno</a></td>
+                    <td><a href="./misto/74087959-c707-4d8e-b5d7-9a2b5ba4844d">Nemocnice Prachatice - OČKO Hotel Park</a></td>
+                    <td><a href="./okres/Prachatice">Prachatice</a></td>
+                    <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            694
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/313285e5-df33-485b-aad2-1f121d45aba8">Nemocnice Strakonice - OČKO tělocvična STARZ</a></td>
+                    <td><a href="./okres/Strakonice">Strakonice</a></td>
+                    <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/2cd34358-0cf7-43de-8bf1-e2892ad9611e">Nemocnice Tábor - OČKO  Zimní stadion</a></td>
+                    <td><a href="./okres/Tábor">Tábor</a></td>
+                    <td><a href="./kraj/Jihočeský">Jihočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/2606719f-ddd9-4b63-8a67-68236380820f">Nemocnice Blansko</a></td>
+                    <td><a href="./okres/Blansko">Blansko</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">1326</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/5">Fakultní nemocnice u sv. Anny v Brně</a></td>
-                    <td><a href="./mesto/Brno">Brno</a></td>
+                    <td><a href="./misto/7bdb206f-d1a2-4afb-9770-863958ae98f7">Nemocnice Boskovice s.r.o.</a></td>
+                    <td><a href="./okres/Blansko">Blansko</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">143</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/260">Vojenská nemocnice Brno</a></td>
-                    <td><a href="./mesto/Brno">Brno</a></td>
+                    <td><a href="./misto/da5422b1-8002-456c-aa95-9a26a5e0e622">Břeclav Dům školství</a></td>
+                    <td><a href="./okres/Břeclav">Břeclav</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/4">Zdravotní ústav se sídlem v Ostravě - Brno</a></td>
-                    <td><a href="./mesto/Brno">Brno</a></td>
+                    <td><a href="./misto/66d5df2b-faaa-4590-86ba-8f403066cf8f">Hustopeče Společenský dům (FN u sv. Anny)</a></td>
+                    <td><a href="./okres/Břeclav">Břeclav</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            568
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/14">Nemocnice Hustopeče, p.o.</a></td>
-                    <td><a href="./mesto/Hustopeče">Hustopeče</a></td>
+                    <td><a href="./misto/c782926c-12bf-4071-a62a-79b75515a1a6">Nemocnice Hustopeče, p.o.</a></td>
+                    <td><a href="./okres/Břeclav">Břeclav</a></td>
                     <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">76</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/8">Karlovarská krajská nemocnice a.s. - Cheb</a></td>
-                    <td><a href="./mesto/Cheb">Cheb</a></td>
+                    <td><a href="./misto/4a444781-6d8f-496e-9da0-5f813f6113a6">Fakultní nemocnice u sv. Anny v Brně</a></td>
+                    <td><a href="./okres/Brno-město">Brno-město</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            2182
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/0f396137-e1fe-4e67-8291-292e4066376d">FN Brno Výstaviště</a></td>
+                    <td><a href="./okres/Brno-město">Brno-město</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            928
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/2a70afbb-3957-427a-9201-2e79e3b2a5dd">Vojenská nemocnice Brno</a></td>
+                    <td><a href="./okres/Brno-město">Brno-město</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            414
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/89e0b07f-ac66-4192-ac25-c3eb5d1b50ce">Zdravotníci SurGal</a></td>
+                    <td><a href="./okres/Brno-město">Brno-město</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/e1279737-8cfb-4197-ad38-3def6a9a17e0">Zdravotní ústav se sídlem v Ostravě - pracoviště Brno</a></td>
+                    <td><a href="./okres/Brno-město">Brno-město</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/01a3372d-3209-471a-a1cc-daf68f28caed">Nemocnice Ivančice, p.o.</a></td>
+                    <td><a href="./okres/Brno-venkov">Brno-venkov</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/e7c6b8a7-11b2-4921-bf5b-6738b008f7dc">Nemocnice Tišnov</a></td>
+                    <td><a href="./okres/Brno-venkov">Brno-venkov</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/7db4f337-4936-4175-b7a9-4ddffa91b6f4">Kyjov Městské kulturní středisko</a></td>
+                    <td><a href="./okres/Hodonín">Hodonín</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            616
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/ca2ebe9a-25f5-4386-a47a-1def0c83afa5">Nemocnice TGM Hodonín, přísp. organizace Dům kultury Hodonín - očkovací centrum COVID-19</a></td>
+                    <td><a href="./okres/Hodonín">Hodonín</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/d03cc3a3-044e-4d00-a2ec-7abccc400b3b">Nemocnice Vyškov, p. o.</a></td>
+                    <td><a href="./okres/Vyškov">Vyškov</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/f5fe8269-61d2-4c43-8661-81876bbbbc89">Znojmo Sportovni Hala Dvořákova</a></td>
+                    <td><a href="./okres/Znojmo">Znojmo</a></td>
+                    <td><a href="./kraj/Jihomoravský">Jihomoravský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            287
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/f48613c8-f616-460b-bbb3-096e07223c73">ImunoSantana spol. s r.o.</a></td>
+                    <td><a href="./okres/Cheb">Cheb</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">158</span>
+                        <span class="badge badge-pill badge-success">
+                            374
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/17">Karlovarská krajská nemocnice a.s.</a></td>
-                    <td><a href="./mesto/Karlovy Vary">Karlovy Vary</a></td>
+                    <td><a href="./misto/28c67663-3032-41e4-9df6-7f90abea82f6">Léčebné lázně Mariánské Lázně a.s.</a></td>
+                    <td><a href="./okres/Cheb">Cheb</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            234
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/42">Nemocnice Sokolov</a></td>
-                    <td><a href="./mesto/Sokolov">Sokolov</a></td>
+                    <td><a href="./misto/db148287-219d-4213-806f-4c7322e26291">Nemocnice v Chebu</a></td>
+                    <td><a href="./okres/Cheb">Cheb</a></td>
                     <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            471
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/265">Městská nemocnice, a. s., Dvůr Králové nad Labem</a></td>
-                    <td><a href="./mesto/Dvůr Králové nad Labem">Dvůr Králové nad Labem</a></td>
+                    <td><a href="./misto/800e3522-2335-4e5c-bb6e-c219b5667f30">KV ARÉNA OČKOVACÍ CENTRUM</a></td>
+                    <td><a href="./okres/Karlovy Vary">Karlovy Vary</a></td>
+                    <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            1733
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/9cf6f860-3089-4f8b-abf9-86109580dd7e">Moje Ambulance Karlovy Vary</a></td>
+                    <td><a href="./okres/Karlovy Vary">Karlovy Vary</a></td>
+                    <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            8696
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4aec9f14-bc39-4d73-be9e-d2c7e60e3495">Nemocnice Ostrov</a></td>
+                    <td><a href="./okres/Karlovy Vary">Karlovy Vary</a></td>
+                    <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5d4ec5da-2348-4a49-9661-ae1f9a60485a">Nemocnice Sokolov</a></td>
+                    <td><a href="./okres/Sokolov">Sokolov</a></td>
+                    <td><a href="./kraj/Karlovarský">Karlovarský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            299
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/57932100-0df4-472c-a015-d2b750df5b58">Fakultní nemocnice Hradec Králové</a></td>
+                    <td><a href="./okres/Hradec Králové">Hradec Králové</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">107</span>
+                        <span class="badge badge-pill badge-success">
+                            278
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/12">Fakultní nemocnice Hradec Králové</a></td>
-                    <td><a href="./mesto/Hradec Králové">Hradec Králové</a></td>
+                    <td><a href="./misto/ecdde69c-5828-46ca-a973-2ce3cb9ae1b6">Oblastní nemocnice Jičín a.s.</a></td>
+                    <td><a href="./okres/Jičín">Jičín</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/149">Oblastní nemocnice Jičín a.s.</a></td>
-                    <td><a href="./mesto/Jičín">Jičín</a></td>
+                    <td><a href="./misto/e8de7565-5dad-46a9-b7c1-7d7d7d73263f">Oblastní nemocnice Náchod a.s.</a></td>
+                    <td><a href="./okres/Náchod">Náchod</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">106</span>
+                        <span class="badge badge-pill badge-success">
+                            404
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/45">Oblastní nemocnice Trutnov a.s.</a></td>
-                    <td><a href="./mesto/Trutnov">Trutnov</a></td>
+                    <td><a href="./misto/be3e9bad-6d9f-4302-8d3c-99fb456f7643">Nemocnice Rychnov nad Kněžnou</a></td>
+                    <td><a href="./okres/Rychnov nad Kněžnou">Rychnov nad Kněžnou</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">2</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/268">Nemocnice Vrchlabí, s.r.o.</a></td>
-                    <td><a href="./mesto/Vrchlabí">Vrchlabí</a></td>
+                    <td><a href="./misto/8805928d-545e-48b9-8be1-ea3ac9b4c21c">Městská nemocnice, a.s. ve Dvoře Králové n. L.</a></td>
+                    <td><a href="./okres/Trutnov">Trutnov</a></td>
                     <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">184</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/6">Nemocnice s poliklinikou Česká Lípa a.s.</a></td>
-                    <td><a href="./mesto/Česká Lípa">Česká Lípa</a></td>
+                    <td><a href="./misto/0ea63d3f-dd1c-47bb-b029-cbbdf187a357">Nemocnice Vrchlabí, s.r.o.</a></td>
+                    <td><a href="./okres/Trutnov">Trutnov</a></td>
+                    <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/8facdb9c-6716-4666-ae00-b58f7ccee441">Oblastní nemocnice Trutnov a.s.</a></td>
+                    <td><a href="./okres/Trutnov">Trutnov</a></td>
+                    <td><a href="./kraj/Královéhradecký">Královéhradecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            12
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/cb0f8a24-3c54-467e-9e67-de01f424ea85">Česká Lípa očkovací místo  Crystal</a></td>
+                    <td><a href="./okres/Česká Lípa">Česká Lípa</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/15">Nemocnice Jablonec nad Nisou, p. o.</a></td>
-                    <td><a href="./mesto/Jablonec nad Nisou">Jablonec nad Nisou</a></td>
+                    <td><a href="./misto/575508f4-5cc6-4ec7-b80c-4d1facd26e0a">Nemocnice s poliklinikou Česká Lípa, a.s.</a></td>
+                    <td><a href="./okres/Česká Lípa">Česká Lípa</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">348</span>
+                        <span class="badge badge-pill badge-success">
+                            838
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/1">Krajská nemocnice Liberec a.s.</a></td>
-                    <td><a href="./mesto/Liberec">Liberec</a></td>
+                    <td><a href="./misto/4ed8c2be-fe2b-41d2-b58e-d69ed9a4c9f7">Nemocnice Jablonec n. Nisou</a></td>
+                    <td><a href="./okres/Jablonec nad Nisou">Jablonec nad Nisou</a></td>
                     <td><a href="./kraj/Liberecký">Liberecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">939</span>
+                        <span class="badge badge-pill badge-warning">
+                            68
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/3">Bílovecká nemocnice, a.s.</a></td>
-                    <td><a href="./mesto/Bílovec">Bílovec</a></td>
+                    <td><a href="./misto/a4c6a778-78c7-4604-9a76-2a929870a45c">EUC Klinika s.r.o. - Liberec</a></td>
+                    <td><a href="./okres/Liberec">Liberec</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5a7c4ca5-5efa-4f81-a621-3cc6b97a5e9f">Krajská nemocnice Liberec, a.s. - Nemocnice Frýdlant</a></td>
+                    <td><a href="./okres/Liberec">Liberec</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/be1701ea-eced-4c82-bbd5-7524d72ba3ec">Moje Ambulance a.s. Liberec</a></td>
+                    <td><a href="./okres/Liberec">Liberec</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/73bb8a1c-2a4f-48ae-a5c3-5c295ae45d53">Očkovací centrum Liberec</a></td>
+                    <td><a href="./okres/Liberec">Liberec</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/fc926c27-6f37-49c2-9944-7b641a03d691">Zdravotní ústav se sídlem v Ústí nad Labem - pracoviště Liberec</a></td>
+                    <td><a href="./okres/Liberec">Liberec</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/1a303c70-c076-409d-af38-ca7108a6f186">Krajská nemocnice Liberec, a.s. - nemocnice Turnov</a></td>
+                    <td><a href="./okres/Semily">Semily</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4938a85d-84a8-4b1e-bc65-87a6dac5efa5">Masarykova městská nemocnice a.s. (Jilemnice)</a></td>
+                    <td><a href="./okres/Semily">Semily</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            298
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5be58deb-47c3-46ee-9181-7a89443f33ff">Masarykova městská nemocnice, a.s. (nemocnice Semily)</a></td>
+                    <td><a href="./okres/Semily">Semily</a></td>
+                    <td><a href="./kraj/Liberecký">Liberecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            6
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/243d9780-7f89-4218-8db5-e18ceda4778b">Nemocnice AGEL Podhorská a.s. pracoviště Bruntál</a></td>
+                    <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            44
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/49">Bohumínská městská nemocnice  a.s.</a></td>
-                    <td><a href="./mesto/Bohumín">Bohumín</a></td>
+                    <td><a href="./misto/4cf475a4-9727-4afb-a458-80cbe7d7a497">Nemocnice AGEL Podhorská a.s.- pracoviště Rýmařov</a></td>
+                    <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">173</span>
+                        <span class="badge badge-pill badge-success">
+                            138
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/148">Nemocnice AGEL Bruntál</a></td>
-                    <td><a href="./mesto/Bruntál">Bruntál</a></td>
+                    <td><a href="./misto/13226cfa-b720-4a12-b6d7-3c60b6b718d6">Ortopedie - Nandana Bruntál s.r.o.</a></td>
+                    <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">126</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/51">Moje Ambulance a.s. Frýdek - Místek</a></td>
-                    <td><a href="./mesto/Frýdek-Místek">Frýdek-Místek</a></td>
+                    <td><a href="./misto/41efe0d6-da6d-4978-8f80-ee2999a71580">Sdružené zdravotnické zařízení Krnov, p. o. - pediatrické odd.</a></td>
+                    <td><a href="./okres/Bruntál">Bruntál</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            231
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/10">Nemocnice ve Frýdku-Místku, p.o.</a></td>
-                    <td><a href="./mesto/Frýdek-Místek">Frýdek-Místek</a></td>
+                    <td><a href="./misto/f1434a8c-a1f4-4af4-b4eb-ea7a70011535">Moje Ambulance a.s. Frýdek - Místek</a></td>
+                    <td><a href="./okres/Frýdek-Místek">Frýdek-Místek</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">178</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/11">Nemocnice s poliklinikou Havířov, p.o.</a></td>
-                    <td><a href="./mesto/Havířov">Havířov</a></td>
+                    <td><a href="./misto/c4c7db25-dd2d-4182-bd32-0b6ad04f0bb1">Nemocnice Třinec, příspěvková organizace</a></td>
+                    <td><a href="./okres/Frýdek-Místek">Frýdek-Místek</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">195</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/19">Karvinská hornická nemocnice a.s.</a></td>
-                    <td><a href="./mesto/Karviná">Karviná</a></td>
+                    <td><a href="./misto/85683ce8-5a0e-4733-b5e3-614d9d4ef335">Nemocnice ve Frýdku-Místku, p.o.</a></td>
+                    <td><a href="./okres/Frýdek-Místek">Frýdek-Místek</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            146
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/18">Nemocnice s poliklinikou Karviná-Ráj</a></td>
-                    <td><a href="./mesto/Karviná">Karviná</a></td>
+                    <td><a href="./misto/c2ec6521-6a37-44c7-a661-1370adbac9c5">Bohumínská městská nemocnice, a.s.</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            83
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/55">SZZ Krnov</a></td>
-                    <td><a href="./mesto/Krnov">Krnov</a></td>
+                    <td><a href="./misto/ae9c4f09-2a1d-41dd-bf45-f8864f24dd5c">Karvinská hornická nemocnice a.s. Oddělení pracovního lékařství KHN</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            25
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/59">Nemocnice AGEL Nový Jičín a.s.</a></td>
-                    <td><a href="./mesto/Nový Jičín">Nový Jičín</a></td>
+                    <td><a href="./misto/3ffb874d-db62-4e50-8c75-d819d283d160">Moje Ambulance a.s. Havířov</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">393</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/27">Slezská nemocnice v Opavě</a></td>
-                    <td><a href="./mesto/Opava">Opava</a></td>
+                    <td><a href="./misto/3aff95e6-8ae8-445c-9cdf-dfdb187f7f2e">Moje Ambulance a.s. Karviná</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">562</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/28">EUC Klinika Ostrava</a></td>
-                    <td><a href="./mesto/Ostrava">Ostrava</a></td>
+                    <td><a href="./misto/d98e57cf-fc29-40fb-a432-7631f17956ea">Nemocnice s poliklinikou Havířov, p.o.</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">75</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/31">Fakultní nemocnice Ostrava</a></td>
-                    <td><a href="./mesto/Ostrava">Ostrava</a></td>
+                    <td><a href="./misto/77e3d92d-123b-452d-93ec-30afac4e2c0b">Nemocnice s poliklinikou Karviná-Ráj, p.o. - pracoviště Karviná</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">2649</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/30">Městská nemocnice Ostrava, p.o.</a></td>
-                    <td><a href="./mesto/Ostrava">Ostrava</a></td>
+                    <td><a href="./misto/63a56753-7d68-44cb-a025-d605c6c8d307">Nemocnice s poliklinikou Karviná-Ráj, p.o. - pracoviště Orlová</a></td>
+                    <td><a href="./okres/Karviná">Karviná</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/60">Moje Ambulance a.s. Ostrava - Poruba</a></td>
-                    <td><a href="./mesto/Ostrava">Ostrava</a></td>
+                    <td><a href="./misto/f1b3f2dc-c4d1-4f50-b79a-a48ed0c393d6">Bílovecká nemocnice, a.s.</a></td>
+                    <td><a href="./okres/Nový Jičín">Nový Jičín</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            9
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/283">Nemocnice AGEL Ostrava-Vítkovice a.s. - Očkování proti COVID-19</a></td>
-                    <td><a href="./mesto/Ostrava">Ostrava</a></td>
+                    <td><a href="./misto/7ce0223d-0ec7-4722-a7d3-f23699e21bc9">Městská nemocnice v Odrách, p.o. - veřejnost</a></td>
+                    <td><a href="./okres/Nový Jičín">Nový Jičín</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">14</span>
+                        <span class="badge badge-pill badge-success">
+                            120
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/29">Zdravotní ústav se sídlem v Ostravě - Ostrava</a></td>
-                    <td><a href="./mesto/Ostrava">Ostrava</a></td>
+                    <td><a href="./misto/249c3cf7-8d0e-4301-998b-140dddf8694d">Nemocnice AGEL Nový Jičín a.s. - Vakcinační centrum pro veřejnost</a></td>
+                    <td><a href="./okres/Nový Jičín">Nový Jičín</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">34</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/44">Nemocnice Třinec, p.o.</a></td>
-                    <td><a href="./mesto/Třinec">Třinec</a></td>
+                    <td><a href="./misto/d58b9a53-e9a4-4374-9853-1d93c4540fb4">THERÁPON 98, a.s. - Kopřivnice</a></td>
+                    <td><a href="./okres/Nový Jičín">Nový Jičín</a></td>
                     <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/13">Nemocnice Hranice a.s.</a></td>
-                    <td><a href="./mesto/Hranice">Hranice</a></td>
+                    <td><a href="./misto/0c53a5a0-70c8-489f-8fc5-3d98a41bcb3e">Moje Ambulance a.s. Opava</a></td>
+                    <td><a href="./okres/Opava">Opava</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            2880
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/aa0a5675-d1ba-4282-9bbf-c36053f0e7c9">Slezská nemocnice v Opavě, p.o.</a></td>
+                    <td><a href="./okres/Opava">Opava</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            1843
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4b39139d-22d5-40e3-b752-dfa2d6aca34e">EUC klinika Ostrava a.s.</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/1295fe02-0319-40e4-a482-d4b8a0bfe138">FN Ostrava - Černá Louka Výstaviště</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            5336
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/262721a0-5551-41d6-bc46-06d5aa9d18a8">FN Ostrava - Poliklinika</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            477
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/859a3a84-5aa4-4d6c-9369-1f871bb4a679">Livian s.r.o.</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/a74425f4-80fe-4f1f-abb9-3e8df7ca8aac">Městská nemocnice Ostrava, p.o., Vakcinační centrum</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            324
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/35bc3f1c-b301-44cd-8b69-7073ea58d968">Moje Ambulance a.s. Ostrava-Centrum</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/bd060d74-64dd-45dd-bd06-51f9d6147814">Moje Ambulance a.s. Ostrava - Poruba</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/71b299fb-33f6-46b7-ae94-78815297125c">Nemocnice AGEL Ostrava-Vítkovice a.s.</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/2c11f28c-f95b-4af0-8fd9-d33b104bafb9">Poliklinika GILMEDA Vratimov</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/94a422eb-b0c6-4729-9224-5c3cf7c0809a">Zdravotní ústav se sídlem v Ostravě</a></td>
+                    <td><a href="./okres/Ostrava-město">Ostrava-město</a></td>
+                    <td><a href="./kraj/Moravskoslezský">Moravskoslezský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            48
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/004e0965-84f6-4aa1-92cb-7242c8ae394a">Nemocnice AGEL Jeseník a.s.</a></td>
+                    <td><a href="./okres/Jeseník">Jeseník</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            28
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/273">Nemocnice AGEL Jeseník a.s.</a></td>
-                    <td><a href="./mesto/Jeseník">Jeseník</a></td>
+                    <td><a href="./misto/bbbcf265-9f34-4056-a7e8-f9067fd339a4">AGEL Středomoravská nemocniční a.s., Nemocnice AGEL Šternberk</a></td>
+                    <td><a href="./okres/Olomouc">Olomouc</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">11</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/284">Nemocnice AGEL Jeseník a.s. - Očkování na COVID</a></td>
-                    <td><a href="./mesto/Jeseník">Jeseník</a></td>
+                    <td><a href="./misto/a91d8128-c379-456c-b04b-1f1d6aa2da76">CTCenter MaVe s.r.o.</a></td>
+                    <td><a href="./okres/Olomouc">Olomouc</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/25">Fakultní nemocnice Olomouc</a></td>
-                    <td><a href="./mesto/Olomouc">Olomouc</a></td>
+                    <td><a href="./misto/a1f7b243-f18c-45a2-8d82-5a3273c687b8">Fakultní nemocnice Olomouc</a></td>
+                    <td><a href="./okres/Olomouc">Olomouc</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">176</span>
+                        <span class="badge badge-pill badge-success">
+                            336
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/26">Vojenská nemocnice Olomouc</a></td>
-                    <td><a href="./mesto/Olomouc">Olomouc</a></td>
+                    <td><a href="./misto/de1fc22a-e006-4725-8860-7534682fb18c">Vojenská nemocnice Olomouc</a></td>
+                    <td><a href="./okres/Olomouc">Olomouc</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">737</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/67">AGEL Středomoravská nemocniční a.s. - Přerov</a></td>
-                    <td><a href="./mesto/Přerov">Přerov</a></td>
+                    <td><a href="./misto/df835442-d55c-4653-ad02-23443d6b1700">AGEL Středomoravská nemocniční a.s., Nemocnice AGEL Přerov</a></td>
+                    <td><a href="./okres/Přerov">Přerov</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">255</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/272">AGEL Středomoravská nemocniční a.s. - Prostějov</a></td>
-                    <td><a href="./mesto/Prostějov">Prostějov</a></td>
+                    <td><a href="./misto/09eed895-008f-4a50-839d-8ba8dbfe2850">Nemocnice Hranice a.s.</a></td>
+                    <td><a href="./okres/Přerov">Přerov</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">48</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/269">AGEL Středomoravská nemocniční a.s. - Šternberk</a></td>
-                    <td><a href="./mesto/Šternberk">Šternberk</a></td>
+                    <td><a href="./misto/29b4659f-2463-4125-bbf6-2be99d607807">Středomoravská nemocniční a.s., Nemocnice AGEL Prostějov</a></td>
+                    <td><a href="./okres/Prostějov">Prostějov</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">112</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/270">Nemocnice Šumperk a.s.</a></td>
-                    <td><a href="./mesto/Šumperk">Šumperk</a></td>
+                    <td><a href="./misto/0980ebfa-a1f3-4b2f-8ae3-a946d3b77cc8">Nemocnice Šumperk</a></td>
+                    <td><a href="./okres/Šumperk">Šumperk</a></td>
                     <td><a href="./kraj/Olomoucký">Olomoucký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">157</span>
+                        <span class="badge badge-pill badge-success">
+                            718
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/274">Nemocnice Pardubického kraje, a.s. - Chrudimská nemocnice</a></td>
-                    <td><a href="./mesto/Chrudim">Chrudim</a></td>
+                    <td><a href="./misto/a1766688-7575-438d-8586-b0117a46153d">Chrudimská nemocnice</a></td>
+                    <td><a href="./okres/Chrudim">Chrudim</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/275">Nemocnice Pardubického kraje, a.s. - Litomyšlská nemocnice</a></td>
-                    <td><a href="./mesto/Litomyšl">Litomyšl</a></td>
+                    <td><a href="./misto/61655af2-1ed8-4603-91b2-bb7a9433ccc2">MUDr. Radoslav Svoboda s.r.o. - Seč</a></td>
+                    <td><a href="./okres/Chrudim">Chrudim</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/278">Nemocnice Pardubického kraje, a.s. - Pardubická nemocnice</a></td>
-                    <td><a href="./mesto/Pardubice">Pardubice</a></td>
+                    <td><a href="./misto/b6f39bb5-9ebf-44be-a1d1-0efacab96703">Nemocnice Pardubice - Sál Jana Kašpara Krajský úřad</a></td>
+                    <td><a href="./okres/Pardubice">Pardubice</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/277">Nemocnice Pardubického kraje, a.s - Svitavská nemocnice</a></td>
-                    <td><a href="./mesto/Svitavy">Svitavy</a></td>
+                    <td><a href="./misto/6edad920-0382-4946-af44-cafeb841d6b1">Litomyšlská nemocnice</a></td>
+                    <td><a href="./okres/Svitavy">Svitavy</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/276">Nemocnice Pardubického kraje, a.s. - Orlickoústecká nemocnice</a></td>
-                    <td><a href="./mesto/Ústí nad Orlicí">Ústí nad Orlicí</a></td>
+                    <td><a href="./misto/03d60c72-2c3b-4aa1-882f-ed7b9f43d734">Svitavská nemocnice - multifunkční centrum Fabrika</a></td>
+                    <td><a href="./okres/Svitavy">Svitavy</a></td>
                     <td><a href="./kraj/Pardubický">Pardubický</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/263">Domažlická nemocnice</a></td>
-                    <td><a href="./mesto/Domažlice">Domažlice</a></td>
+                    <td><a href="./misto/0c7e626d-b0e6-413f-bd48-9bfce9b5487e">Orlickoústecká nemocnice</a></td>
+                    <td><a href="./okres/Ústí nad Orlicí">Ústí nad Orlicí</a></td>
+                    <td><a href="./kraj/Pardubický">Pardubický</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/14c58957-7396-4322-a237-67b5e31b16e3">Domažlická nemocnice</a></td>
+                    <td><a href="./okres/Domažlice">Domažlice</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">78</span>
+                        <span class="badge badge-pill badge-success">
+                            364
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/264">Klatovská nemocnice</a></td>
-                    <td><a href="./mesto/Klatovy">Klatovy</a></td>
+                    <td><a href="./misto/cd252dde-b78e-4c74-88e5-e95d894968ab">Klatovská nemocnice</a></td>
+                    <td><a href="./okres/Klatovy">Klatovy</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">94</span>
+                        <span class="badge badge-pill badge-warning">
+                            11
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/32">Fakultní Nemocnice Plzeň</a></td>
-                    <td><a href="./mesto/Plzeň">Plzeň</a></td>
+                    <td><a href="./misto/5960ec70-2686-4b29-8af0-04a1481e7351">Sušická nemocnice</a></td>
+                    <td><a href="./okres/Klatovy">Klatovy</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">280</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/281">Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Plzeň</a></td>
-                    <td><a href="./mesto/Plzeň">Plzeň</a></td>
+                    <td><a href="./misto/6ce2ad8f-b1f6-4252-b6f0-e8029219c17b">Stodská nemocnice - očkovací místo Kulturní dům Stod</a></td>
+                    <td><a href="./okres/Plzeň-jih">Plzeň-jih</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">16</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/40">Rokycanská nemocnice</a></td>
-                    <td><a href="./mesto/Rokycany">Rokycany</a></td>
+                    <td><a href="./misto/586ab361-ba26-4429-b0f3-8ff9831f07b2">AGEL Poliklinika Plzeň</a></td>
+                    <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">122</span>
+                        <span class="badge badge-pill badge-warning">
+                            94
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/43">Stodská nemocnice</a></td>
-                    <td><a href="./mesto/Stod">Stod</a></td>
+                    <td><a href="./misto/f6a9ae5b-0d93-4bd4-b630-b3667a9c9059">EUC Klinika Plzeň</a></td>
+                    <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">194</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/63">Sušická nemocnice</a></td>
-                    <td><a href="./mesto/Sušice">Sušice</a></td>
+                    <td><a href="./misto/41c51947-5951-432c-9099-bf317756b09d">Fakultní nemocnice Plzeň - očkovací místo</a></td>
+                    <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
                     <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">93</span>
+                        <span class="badge badge-pill badge-success">
+                            195
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/38">Fakultní nemocnice Bulovka</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/4a387070-9a9b-4824-b1b0-437120b10481">Mulačova nemocnice s.r.o.</a></td>
+                    <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            32
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/591855d9-aad8-4d12-86e0-db30cfbb36ee">Zdravotní ústav se sídlem v Ústí nad Labem - pracoviště Plzeň</a></td>
+                    <td><a href="./okres/Plzeň-město">Plzeň-město</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/9fe2420e-f2d6-4897-88a9-7b2443b1c701">Manětín - Kulturní dům Manětín</a></td>
+                    <td><a href="./okres/Plzeň-sever">Plzeň-sever</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/7d48eb57-8ab6-4c37-a267-f759c4ec03bb">Plasy - Kulturní dům Plasy</a></td>
+                    <td><a href="./okres/Plzeň-sever">Plzeň-sever</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/28f83d48-bce8-4d12-9b1f-4316e973c02f">Privamed</a></td>
+                    <td><a href="./okres/Plzeň-sever">Plzeň-sever</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            100
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/333a11ee-363d-499f-90cb-9d61f62543cc">Rokycanská nemocnice, a. s.</a></td>
+                    <td><a href="./okres/Rokycany">Rokycany</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/95d1157e-5f77-49fe-ae2d-24e5eef3606c">Bor - Poliklinika Bor</a></td>
+                    <td><a href="./okres/Tachov">Tachov</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/22761b98-e54e-451a-832a-63f0e7a17d66">Konstantinovy Lázně - Kulturní dům</a></td>
+                    <td><a href="./okres/Tachov">Tachov</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/c5881ce2-0007-4fe1-8a80-66fba7dafa3d">Nemocnice následné péče Svatá Anna, s.r.o.</a></td>
+                    <td><a href="./okres/Tachov">Tachov</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            108
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/d420fe26-7f32-4287-b929-4dc90d824b77">Stříbro - Kulturní dům Stříbro</a></td>
+                    <td><a href="./okres/Tachov">Tachov</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/c10c6184-1773-46c8-85c3-7c09f8877880">Tachov - Poliklinika Tachov</a></td>
+                    <td><a href="./okres/Tachov">Tachov</a></td>
+                    <td><a href="./kraj/Plzeňský">Plzeňský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/ccdcc2c1-c477-4271-af37-76ff2ea3e764">Canadian Medical s.r.o., očkovací centrum</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">958</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/33">Fakultní nemocnice Královské Vinohrady</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/df47a465-f872-4968-a8e9-057059b8e900">Comfort Care a.s.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">549</span>
+                        <span class="badge badge-pill badge-success">
+                            320
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/35">Fakultní nemocnice v Motole</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/b2d0f892-c779-4cba-8b55-1ed3e8de0e4c">EUC Klinika Praha a.s. - Plaňanská</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">589</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/34">Fakultní Thomayerova nemocnice</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/b8908961-8b5d-46d6-ad40-89bceacd7874">EUC klinika Praha a.s. - Šustova, Praha 11</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">967</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/36">Nemocnice na Homolce</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/6ad1717f-2bac-44e6-b7e9-6582da6b6598">Fakultní Nemocnice Bulovka</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">1126</span>
+                        <span class="badge badge-pill badge-success">
+                            1951
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/282">Poliklinika AGEL Dopravní zdravotnictví a.s.</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/c2ca4cb4-2c8d-4463-9b85-88dff5eb4ba5">Fakultní nemocnice Královské Vinohrady</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            835
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/62">Státní zdravotní ústav</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/77079458-38f2-4bff-b983-7f99a07afdc3">Fakultní nemocnice v Motole</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">536</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/280">Ústřední vojenská nemocnice - Ambulance CAZP</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/648f87b6-06e7-49d5-b2a7-2dc31c867ff7">Fakultní Thomayerova nemocnice</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            285
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/150">Ústřední vojenská nemocnice - Ambulance KIN</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/461c2eda-5db7-4b18-bdbc-3a3111dac0e8">Gerontologické centrum</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/39">Ústřední vojenská nemocnice - Ambulance ORT, pavilon A1</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/30b0373e-0b9a-444d-aa0d-42c8066a39a7">ImunoGen s.r.o.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/37">Ústřední vojenská nemocnice - Očkovací centrum, pavilon L</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/4b708512-790d-4edb-8f3c-303d3d192acf">Institut klinické a experimentální medicíny (IKEM)</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">646</span>
+                        <span class="badge badge-pill badge-warning">
+                            21
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/61">Vakcinační centrum IKEM</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/51f67019-bb4e-41e0-a38b-91c9480596fd">L Dermamedest s.r.o.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">17</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/151">Všeobecná fakultní nemocnice Praha</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/c8e549b8-aafb-4b4c-ae3b-b1ccee70513f">LRS Chvaly, o.p.s.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            255
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/152">Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha Dittrichova</a></td>
-                    <td><a href="./mesto/Praha">Praha</a></td>
+                    <td><a href="./misto/d48e3272-cea1-48b7-af08-ebbb92eb6615">Medica JM - Poliklinika Chomutovická</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
                     <td><a href="./kraj/Praha">Praha</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">23</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/2">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
-                    <td><a href="./mesto/Benešov">Benešov</a></td>
+                    <td><a href="./misto/fb6b58b9-4956-4a01-8c5f-b9b106dc784e">Medica JM - Poliklinika Michnova</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            1296
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/dd1190e0-c2e5-4e90-baaf-1eefa55c4e46">Městská nemocnice následné péče</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            580
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/12d05c60-f168-462a-a4e1-ac5ad8e42722">Městská poliklinika Praha - Spálená</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            714
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/02614fc8-a7d0-439d-8589-57c599cb495d">Nemocnice Na Františku</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            314
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b62c5314-15f8-4da2-95f0-0aedd6d11ac2">Nemocnice Na Homolce</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            1911
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/44133735-28b0-4c07-a675-f6613a761f8c">Nemocnice Sv. Kříže Žižkov</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            224
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/724a30ec-c666-42e1-81ca-9df326988d73">Poliklinika Agel Praha</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            190
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/7fd8c9d3-96af-4379-be5c-63849cf5e013">Poliklinika Anděl s.r.o., Praha 5 - Smíchov</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            60
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/e1aecc42-6aa6-46cc-9dde-9761fd6fa830">Poliklinika Prosek a.s.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            62
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b8a946ef-4994-4dcd-859e-09040f43a6d0">RESPIMED s.r.o.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5fec0218-4280-40c9-8f6d-c096ea70bbaa">ResTrial s.r.o. - ordinace PL</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/381ef57d-e0e9-4079-a1b9-fd7d476a8aae">Státní zdravotní ústav - budova 11</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/da7eca1a-736f-4334-9034-fa61214b5ae6">Urogyn Medico s.r.o.</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4ea9c79c-ebac-4505-8176-7d22ca45c0d2">ÚVN Praha - Vakcinační centrum COVID-19</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            753
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/9295cb5e-e9ae-4858-97ce-5dadaf99ad72">Všeobecná fakultní nemocnice Praha</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/d39dde40-8947-46df-ae25-97a1faa3f5ef">Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Praha</a></td>
+                    <td><a href="./okres/Hlavní město Praha">Hlavní město Praha</a></td>
+                    <td><a href="./kraj/Praha">Praha</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            216
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/a8b62b00-0e64-4b8d-8202-316e0c00f809">Nemocnice Rudolfa a Stefanie Benešov, a.s.</a></td>
+                    <td><a href="./okres/Benešov">Benešov</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">154</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/20">Oblastní nemocnice Kladno</a></td>
-                    <td><a href="./mesto/Kladno">Kladno</a></td>
+                    <td><a href="./misto/989b3700-401f-4700-a684-ae09d348a3c0">Nemocnice Hořovice</a></td>
+                    <td><a href="./okres/Beroun">Beroun</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/21">Oblastní nemocnice Kolín</a></td>
-                    <td><a href="./mesto/Kolín">Kolín</a></td>
+                    <td><a href="./misto/e8e63305-db89-43c6-8aa2-eeda1a4287ef">Rehabilitační nemocnici Beroun</a></td>
+                    <td><a href="./okres/Beroun">Beroun</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">14</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/23">Nemocnice Kutná Hora</a></td>
-                    <td><a href="./mesto/Kutná Hora">Kutná Hora</a></td>
+                    <td><a href="./misto/92c26a50-b614-45b4-94f6-366a766796a0">Nemocnice Slaný</a></td>
+                    <td><a href="./okres/Kladno">Kladno</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">67</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/261">Oblastní nemocnice Mladá Boleslav</a></td>
-                    <td><a href="./mesto/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="./misto/4dd9014a-436c-4e8a-aa45-010ad32272f7">Oblastní nemocnice Kladno</a></td>
+                    <td><a href="./okres/Kladno">Kladno</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">788</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/24">Nemocnice Neratovice</a></td>
-                    <td><a href="./mesto/Neratovice">Neratovice</a></td>
+                    <td><a href="./misto/718fcb7c-904e-41f3-9be6-15a75ef9b5e0">Oblastní nemocnice Kolín - očkovací místo</a></td>
+                    <td><a href="./okres/Kolín">Kolín</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">326</span>
+                        <span class="badge badge-pill badge-warning">
+                            75
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/262">Oblastní nemocnice Příbram, a.s.</a></td>
-                    <td><a href="./mesto/Příbram">Příbram</a></td>
+                    <td><a href="./misto/d206ef0a-fb75-44d3-a67f-f1cc73121aa1">Nemocnice Čáslav</a></td>
+                    <td><a href="./okres/Kutná Hora">Kutná Hora</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">410</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/271">Nemocnice AGEL Říčany a.s.</a></td>
-                    <td><a href="./mesto/Říčany">Říčany</a></td>
+                    <td><a href="./misto/7fc4f736-04a4-403d-888b-9d52f1727a2e">Nemocnice Kutná Hora</a></td>
+                    <td><a href="./okres/Kutná Hora">Kutná Hora</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/68">Nemocnice Slaný</a></td>
-                    <td><a href="./mesto/Slaný">Slaný</a></td>
+                    <td><a href="./misto/39aece24-3e8d-4261-8cab-db23b2d48d50">Mělnická zdravotní, a.s.</a></td>
+                    <td><a href="./okres/Mělník">Mělník</a></td>
                     <td><a href="./kraj/Středočeský">Středočeský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">916</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/48">Hornická nemocnice s poliklinikou spol. s.r.o.</a></td>
-                    <td><a href="./mesto/Bílina">Bílina</a></td>
+                    <td><a href="./misto/ffddf34a-46dc-48a5-ba76-cf1c35339bf2">Nemocnice Neratovice</a></td>
+                    <td><a href="./okres/Mělník">Mělník</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/fe82349e-63db-4623-b6c1-cabd2214c1ee">SYNLAB czech s.r.o. - Kralupy nad Vltavou</a></td>
+                    <td><a href="./okres/Mělník">Mělník</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4c050cd4-6edf-4b4b-8034-8b731978b216">Oblastní nemocnice Mladá Boleslav</a></td>
+                    <td><a href="./okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/15065368-c355-4728-b0ae-d3fc8798cf42">ON Mladá Boleslav - Kino Mnichovo Hradiště</a></td>
+                    <td><a href="./okres/Mladá Boleslav">Mladá Boleslav</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/0707be37-c28c-489c-b0d2-96704013eb91">Městská nemocnice Městec Králové a.s.</a></td>
+                    <td><a href="./okres/Nymburk">Nymburk</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/31de7f09-960c-4287-80b4-012568de1703">Vakcinační centrum COVID19 - Obecní dům Nymburk, provozovatel Nemocnice Nymburk s.r.o.</a></td>
+                    <td><a href="./okres/Nymburk">Nymburk</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/281cd704-c5c4-447d-aace-debad0aa3269">Nemocnice AGEL Říčany a.s. - Sportovní hala</a></td>
+                    <td><a href="./okres/Praha-východ">Praha-východ</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/ff1d41dd-18a2-45ed-bfee-8b2ff0022633">Nemocnice Brandýs nad Labem</a></td>
+                    <td><a href="./okres/Praha-východ">Praha-východ</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/3dc2a084-026d-417c-9401-6f295a918010">Nemocnice Sedlčany - Kulturní dům Josefa Suka Sedlčany</a></td>
+                    <td><a href="./okres/Příbram">Příbram</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/e6d0a768-a1a5-4fc8-aada-081ecf2b68b0">Oblastní nemocnice Příbram</a></td>
+                    <td><a href="./okres/Příbram">Příbram</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/28d59069-2d52-40f5-a2a3-75b0daba1c2f">Masarykova nemocnice Rakovník s.r.o.</a></td>
+                    <td><a href="./okres/Rakovník">Rakovník</a></td>
+                    <td><a href="./kraj/Středočeský">Středočeský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            755
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/c254b811-40e4-4604-8066-feac3dc58c41">ARC-MED s.r.o. Klášterec, Kyselka 104</a></td>
+                    <td><a href="./okres/Chomutov">Chomutov</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">21</span>
+                        <span class="badge badge-pill badge-success">
+                            320
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/53">Krajská zdravotní, a.s. - Nemocnice Chomutov, o.z.</a></td>
-                    <td><a href="./mesto/Chomutov">Chomutov</a></td>
+                    <td><a href="./misto/c1308736-72a2-4f4b-b215-a68603bc5fb6">Krajská zdravotní, a.s. - Nemocnice Chomutov, o.z.</a></td>
+                    <td><a href="./okres/Chomutov">Chomutov</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/9">VITA s.r.o</a></td>
-                    <td><a href="./mesto/Duchcov">Duchcov</a></td>
+                    <td><a href="./misto/76a174fb-e672-40c5-ae9c-06c50eb4ce7a">Nemocnice Kadaň s.r.o.</a></td>
+                    <td><a href="./okres/Chomutov">Chomutov</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/56">Nemocnice Litoměřice a.s.</a></td>
-                    <td><a href="./mesto/Litoměřice">Litoměřice</a></td>
+                    <td><a href="./misto/931fb801-8158-4fc2-ac92-2c68d76907d7">Krajská majetková, p.o. středisko Lužická nemocnice Rumburk</a></td>
+                    <td><a href="./okres/Děčín">Děčín</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">40</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/57">Krajská zdravotní, a.s. - Nemocnice Most, o.z.</a></td>
-                    <td><a href="./mesto/Most">Most</a></td>
+                    <td><a href="./misto/77a1d5c5-26b3-4c61-9814-fa6497f83bdd">Krajská zdravotní, a.s. - Nemocnice Děčín, o.z.</a></td>
+                    <td><a href="./okres/Děčín">Děčín</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">27</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/153">Nemocnice Teplice</a></td>
-                    <td><a href="./mesto/Teplice">Teplice</a></td>
+                    <td><a href="./misto/8c388fdf-5cd1-4773-819c-093088aee130">Nemocnice Varnsdorf</a></td>
+                    <td><a href="./okres/Děčín">Děčín</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            374
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/64">Masarykova nemocnice Ústí nad Labem</a></td>
-                    <td><a href="./mesto/Ústí nad Labem">Ústí nad Labem</a></td>
+                    <td><a href="./misto/63c9078b-0701-4da0-821e-4eaa0d9c9968">Krajská zdravotní a.s., - MNUL pracoviště výstaviště Zahrada Čech Litoměřice</a></td>
+                    <td><a href="./okres/Litoměřice">Litoměřice</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">113</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/155">Zdravotní ústav se sídlem v Ústí nad Labem - Pracoviště Ústí</a></td>
-                    <td><a href="./mesto/Ústí nad Labem">Ústí nad Labem</a></td>
+                    <td><a href="./misto/fbbde94b-4a74-41a3-93e1-c3fc53cf2189">Krajská zdravotní a.s., - MNUL pracoviště výstaviště Zahrada Čech Litoměřice</a></td>
+                    <td><a href="./okres/Litoměřice">Litoměřice</a></td>
                     <td><a href="./kraj/Ústecký">Ústecký</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/52">Nemocnice Havlíčkův Brod</a></td>
-                    <td><a href="./mesto/Havlíčkův Brod">Havlíčkův Brod</a></td>
+                    <td><a href="./misto/35226817-f739-4586-9a31-defc268d56e1">Nemocnice Litoměřice a.s.</a></td>
+                    <td><a href="./okres/Litoměřice">Litoměřice</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/a45e27be-cb59-449e-8ee0-ee8646ef0325">Podřipská nemocnice s poliklinikou Roudnice n. L., s.r.o.</a></td>
+                    <td><a href="./okres/Litoměřice">Litoměřice</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            150
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b3427f78-5252-4318-b26e-80670c7bf0a6">Nemocnice AGEL Louny a.s.</a></td>
+                    <td><a href="./okres/Louny">Louny</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            199
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5192f1b9-836b-4736-80a6-28653ef1b965">Nemocnice Žatec, o.p.s.</a></td>
+                    <td><a href="./okres/Louny">Louny</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/518f6665-84b8-4964-ae04-3bff5e0f2d93">Krajská zdravotní, a.s. - Nemocnice Most, o.z.</a></td>
+                    <td><a href="./okres/Most">Most</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            83
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/14b71e51-3e80-42e9-8f0d-eb50320dd7f4">Krušnohorská poliklinika s.r.o.</a></td>
+                    <td><a href="./okres/Most">Most</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/d149c33b-4906-410d-948d-25128f4aa4d7">Hornická nemocnice s poliklinikou spol. s.r.o. - Bílina</a></td>
+                    <td><a href="./okres/Teplice">Teplice</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            769
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/d166058b-d215-4166-925d-69f7c168ef96">Krajská zdravotní, a.s. - Nemocnice Teplice</a></td>
+                    <td><a href="./okres/Teplice">Teplice</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/4475c51f-69b3-410d-b404-eaf319711512">Krajská zdravotní, a.s. - Masarykova nemocnice v Ústí nad Labem, o.z.</a></td>
+                    <td><a href="./okres/Ústí nad Labem">Ústí nad Labem</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5999950a-0e64-4981-bc02-8c4bce24c1e5">Zdravotní ústav se sídlem v Ústí nad Labem - pracoviště Ústí</a></td>
+                    <td><a href="./okres/Ústí nad Labem">Ústí nad Labem</a></td>
+                    <td><a href="./kraj/Ústecký">Ústecký</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-success">
+                            125
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/5af3b96f-7153-4eec-a66a-20a2fcdb9aa8">Nemocnice Havlíčkův Brod</a></td>
+                    <td><a href="./okres/Havlíčkův Brod">Havlíčkův Brod</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">35</span>
+                        <span class="badge badge-pill badge-success">
+                            198
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/54">Nemocnice Jihlava</a></td>
-                    <td><a href="./mesto/Jihlava">Jihlava</a></td>
+                    <td><a href="./misto/65653e1e-fb9e-4f78-9e95-eb7c46d328d5">Nemocnice Jihlava</a></td>
+                    <td><a href="./okres/Jihlava">Jihlava</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            363
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/58">Nemocnice Nové Město na Moravě</a></td>
-                    <td><a href="./mesto/Nové Město na Moravě">Nové Město na Moravě</a></td>
+                    <td><a href="./misto/3f0f3044-990c-4143-a85e-9fc16da5bb1b">Poliklinika Telč, spol. s r.o.</a></td>
+                    <td><a href="./okres/Jihlava">Jihlava</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">34</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/279">Nemocnice Pelhřimov</a></td>
-                    <td><a href="./mesto/Pelhřimov">Pelhřimov</a></td>
+                    <td><a href="./misto/a8413ced-4d83-4b81-bcb9-e53132722acc">Poliklinika Třešť spol. s.r.o</a></td>
+                    <td><a href="./okres/Jihlava">Jihlava</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-success">
+                            510
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/154">Nemocnice Třebíč</a></td>
-                    <td><a href="./mesto/Třebíč">Třebíč</a></td>
+                    <td><a href="./misto/5655ace4-9bfa-4d56-ab8f-927b8944ad95">Velkokapacitní očkovací centrum Jihlava</a></td>
+                    <td><a href="./okres/Jihlava">Jihlava</a></td>
                     <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="./mesto/Kroměříž">Kroměříž</a></td>
-                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td><a href="./misto/b3ab4e46-5faa-4c1a-9a18-e2c8df0726e5">Nemocnice Pelhřimov - Kulturní dům Máj</a></td>
+                    <td><a href="./okres/Pelhřimov">Pelhřimov</a></td>
+                    <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">4</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="./mesto/Uherské Hradiště">Uherské Hradiště</a></td>
-                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td><a href="./misto/cc785573-e41f-43bb-91ea-9a1893f6b9d2">Nemocnice Třebíč</a></td>
+                    <td><a href="./okres/Třebíč">Třebíč</a></td>
+                    <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">171</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="./mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
-                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td><a href="./misto/51202c9c-0869-494a-803f-eb6de980f6f3">Očkovací centrum Třebíč</a></td>
+                    <td><a href="./okres/Třebíč">Třebíč</a></td>
+                    <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="./mesto/Vsetín">Vsetín</a></td>
-                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td><a href="./misto/30ffe93f-6b2b-4324-9c24-8cdd2750524f">Nemocnice Nové Město na Moravě</a></td>
+                    <td><a href="./okres/Žďár nad Sázavou">Žďár nad Sázavou</a></td>
+                    <td><a href="./kraj/Vysočina">Vysočina</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">77</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="./misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="./mesto/Zlín">Zlín</a></td>
+                    <td><a href="./misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="./okres/Kroměříž">Kroměříž</a></td>
                     <td><a href="./kraj/Zlínský">Zlínský</a></td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">45</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="./okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="./okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            79
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="./okres/Vsetín">Vsetín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="./okres/Vsetín">Vsetín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            1
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            42
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="./misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="./okres/Zlín">Zlín</a></td>
+                    <td><a href="./kraj/Zlínský">Zlínský</a></td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
@@ -1012,22 +2302,17 @@
 
 
 
-    <script>
-        
-        $SCRIPT_ROOT = "";
-    </script>
 
 <div class="footer text-center p-3 bg-light mt-4">
-    Vznik 16. 01. 2021, poslední aktualizace 27. 02. 2021 06:24. <a
-        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">Zdroj mapy www.mylog.cz.</a>
+    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;So 06. 03. 2021 08:07. Zdroj mapy: <a
+        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
     <br/>
-    <i>Data na tomto webu jsou pouze orientační, bez
-        jakékoliv záruky a nelze je považovat za spolehlivé. Provozovatel se zříká zodpovědnosti za veškeré škody a
-        újmy,
-        které by použitím těchto dat mohly vzniknout. Web slouží pouze k testování schopností programovacího jazyka
-        Python a
-        podobnost s reálnými skutečnostmi je čistě náhodná. Pro informace o očkování COVID-19 navštivte web <a
-                href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a></i>
+    <i>
+        Data na tomto webu pochází z opendat Ministerstva zdravotnictví ČR - <a
+            href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19</a>
+        Provozovatel se zříká zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
+        Pro informace o očkování COVID-19 navštivte web <a href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a>.
+    </i>
 </div>
 </body>
 </html>

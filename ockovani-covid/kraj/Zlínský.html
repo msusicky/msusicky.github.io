@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
@@ -16,7 +17,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>
-Zlínský kraj |
+Zlínský |
 COVID očkování</title>
 
     
@@ -34,19 +35,23 @@ COVID očkování</title>
         .cip-genpw-icon.cip-icon-key-big {background-image: url(chrome-extension://dafgdjggglmmknipkhngniifhplpcldb/icons/key_24x24.png); }
 
     </style>
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXSRVP25Y2"></script>
     <script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-TXSRVP25Y2');
 
     </script>
+
     
 </head>
 <body>
+
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/ockovani-covid/">COVID očkování</a>
@@ -59,33 +64,38 @@ COVID očkování</title>
         <ul class="navbar-nav mr-auto">
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="/ockovani-covid/info">Přehled očkovacích
-                    míst</a>
+                   href="/ockovani-covid/mista">Přehled očkovacích míst
+                </a>
+                <a class="nav-link "
+                   href="/ockovani-covid/info" style="display: none">Přehled očkovacích míst
+                </a>
             </li>
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity.csv"
-                   target="_blank">RAW data</a>
+                   href="/ockovani-covid/mapa">Mapa
+                </a>
             </li>
+<!--            <li class="nav-item col-lg-auto ml-auto">-->
+<!--                <a class="nav-link "-->
+<!--                   href="/ockovani-covid/opendata">Otevřená data-->
+<!--                </a>-->
+<!--            </li>-->
             <li class="nav-item col-lg-auto ml-auto">
                 <a class="nav-link "
-                   href="https://raw.githubusercontent.com/msusicky/msusicky.github.io/master/ockovani-covid/dump_kapacity_csv.csv"
-                   target="_blank">CSV data</a>
+                   href="/ockovani-covid/statistiky">Statistiky
+                </a>
             </li>
-            <!--      <li class="nav-item">-->
-            <!--         <a class="nav-link disabled" href="/hlidac">Hlídání</a> -->
-            <!--      </li>-->
         </ul>
     </div>
 </nav>
 
 
 <div class="container mt-4">
-    <div class="alert alert-warning alert-dismissible fade show row" role="alert">
-        Poslední aktualizace: <strong> 27. 02. 2021 06:24 </strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+    <div class="alert alert-danger row" role="alert">
+        <p class="mb-0">
+            Web byl přestěhován na: <a class="alert-link" href="https://ockovani.opendatalab.cz">https://ockovani.opendatalab.cz</a>.
+            Data na této stránce <strong>nejsou dále aktualizována!</strong>
+        </p>
     </div>
     
     <div class="row">
@@ -98,7 +108,7 @@ COVID očkování</title>
             <thead  class="thead-dark">
             <tr>
                 <th scope="col" class="text-center">Název</th>
-                <th scope="col" class="text-center">Město</th>
+                <th scope="col" class="text-center">Okres</th>
                 <th scope="col" class="text-center">Kraj</th>
                 <th scope="col" class="text-center">Datum</th>
                 <th scope="col" class="text-center">Volná místa</th>
@@ -107,502 +117,1682 @@ COVID očkování</title>
             <tbody>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            1
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
                     <td>Zlínský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>27. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            27
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>28. 02. 2021</td>
+                    <td class="text-right">So 06. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
                     <td>Zlínský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>01. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">45</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">54</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-warning">
+                            52
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">1</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>02. 03. 2021</td>
+                    <td class="text-right">Ne 07. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">58</span>
+                        <span class="badge badge-pill badge-warning">
+                            41
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
                     <td>Zlínský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">24</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>03. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">4</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">59</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">27</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>04. 03. 2021</td>
+                    <td class="text-right">Po 08. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
                     <td>Zlínský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-success">25</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>05. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>06. 03. 2021</td>
+                    <td class="text-right">Út 09. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
                     <td>Zlínský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>07. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/22">Kroměřížská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Kroměříž">Kroměříž</a></td>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/46">Uherskohradišťská nemocnice a.s.</a></td>
-                    <td><a href="../mesto/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/266">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
-                    <td><a href="../mesto/Valašské Meziříčí">Valašské Meziříčí</a></td>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
                     <td>Zlínský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/47">Vsetínská nemocnice</a></td>
-                    <td><a href="../mesto/Vsetín">Vsetín</a></td>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
                     <td>Zlínský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
                 <tr>
-                    <td><a href="../misto/156">Krajská nemocnice T. Bati, a. s.</a></td>
-                    <td><a href="../mesto/Zlín">Zlín</a></td>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
                     <td>Zlínský</td>
-                    <td>08. 03. 2021</td>
+                    <td class="text-right">St 10. 03. 2021</td>
                     <td class="text-right">
-                        <span class="badge badge-pill badge-danger">0</span>
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-warning">
+                            1
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 11. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 12. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">So 13. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Ne 14. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Po 15. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Út 16. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">St 17. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Čt 18. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/17f9de03-18a0-48e8-91dd-c9b925b2f66a">IVF Czech Republic s.r.o. (Sanatorium Tomášov)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/e342972a-ccb3-4a9a-9a9f-ac95a11997eb">Krajská nemocnice T. Bati, a. s.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/ec7464b3-cfbd-4e49-8187-5f438f69c731">Kroměřížská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Kroměříž">Kroměříž</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/b61479a7-8702-4529-b0a0-d6f31e635199">Luhačovice - IVF Czech Republic s. r. o. (Zdravotní středisko)</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/85032af2-2893-4ba7-afbc-fe5cdee9a5cb">MEDICAL PLUS, s.r.o.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/707c3baf-21d0-48e9-b986-49e9f6097701">MOJE AMBULANCE a.s. Zlín</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/2939d29f-8cb9-49ab-908d-c4425afb5f51">Nemocnice AGEL Valašské Meziříčí a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/be35ee3b-3ddc-4723-b6f5-4f21cd2558a6">Uherskohradišťská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Uherské Hradiště">Uherské Hradiště</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/481dd978-47d9-46a2-a379-84fc06761772">Vsetínská nemocnice a.s.</a></td>
+                    <td><a href="../okres/Vsetín">Vsetín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><a href="../misto/df477c63-b6cc-49b2-aa3c-e9c956232f39">Zorma s.r.o.</a></td>
+                    <td><a href="../okres/Zlín">Zlín</a></td>
+                    <td>Zlínský</td>
+                    <td class="text-right">Pá 19. 03. 2021</td>
+                    <td class="text-right">
+                        <span class="badge badge-pill badge-danger">
+                            0
+                        </span>
                     </td>
                 </tr>
             
@@ -615,22 +1805,17 @@ COVID očkování</title>
 
 
 
-    <script>
-        
-        $SCRIPT_ROOT = "";
-    </script>
 
 <div class="footer text-center p-3 bg-light mt-4">
-    Vznik 16. 01. 2021, poslední aktualizace 27. 02. 2021 06:24. <a
-        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">Zdroj mapy www.mylog.cz.</a>
+    Vznik: 16. 01. 2021, poslední aktualizace:&nbsp;So 06. 03. 2021 08:07. Zdroj mapy: <a
+        href="https://www.mylog.cz/svg-mapa-ceska-a-slovenska/">www.mylog.cz</a>.
     <br/>
-    <i>Data na tomto webu jsou pouze orientační, bez
-        jakékoliv záruky a nelze je považovat za spolehlivé. Provozovatel se zříká zodpovědnosti za veškeré škody a
-        újmy,
-        které by použitím těchto dat mohly vzniknout. Web slouží pouze k testování schopností programovacího jazyka
-        Python a
-        podobnost s reálnými skutečnostmi je čistě náhodná. Pro informace o očkování COVID-19 navštivte web <a
-                href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a></i>
+    <i>
+        Data na tomto webu pochází z opendat Ministerstva zdravotnictví ČR - <a
+            href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19</a>
+        Provozovatel se zříká zodpovědnosti za veškeré škody a újmy, které by použitím těchto dat mohly vzniknout.
+        Pro informace o očkování COVID-19 navštivte web <a href="https://koronavirus.mzcr.cz/ockovani-proti-covid-19/">https://koronavirus.mzcr.cz/ockovani-proti-covid-19/</a>.
+    </i>
 </div>
 </body>
 </html>
